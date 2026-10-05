@@ -23,3 +23,4 @@
 }
 @media (min-width: 560px) { .shots { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (min-width: 760px) { .shots { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.apk-help { margin: -4px 0 12px; font-size: 12px; }

@@ -134,6 +134,7 @@
     "download": "Scarica l'APK",
     "size": "meno di 1 MB",
     "meta": "APK · {version} · {size} KB",
+    "downloadHelp": "Fermo al 100%? Nei download del browser tocca «Scarica comunque».",
     "howTitle": "Installazione",
     "how1": "Scarica il file APK dal pulsante qui sopra.",
     "how2": "Aprilo: Android chiederà di consentire l'installazione da fonti sconosciute per il browser o il gestore file. Consentila solo per questa installazione.",
