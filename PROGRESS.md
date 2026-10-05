@@ -1,8 +1,7 @@
 # Avanzamento
 
 ## Ora
-- [ ] Release v1.0.0: tag `v1.0.0` → GitHub Actions compila, firma e pubblica l'APK; verifica firma dell'APK scaricato
-- [ ] Verifica sito online (GitHub Pages) e pulsante APK con versione
+- [ ] Prova sul telefono reale: installazione APK v1.0.0, widget, notifiche, "Apri il gioco", download orari (conferma utente)
 
 ## Prossimi
 
@@ -27,3 +26,5 @@
 - [x] Orari confermati dall'utente (2026-10-06): Corsa fino a venerdì 00:00, Baule fino a sabato 02:00, Torte fino a domenica 22:00 (riepilogo 22:00-13:00 escluso dai timer)
 - [x] GitHub Pages attivato e 4 secret della chiave aggiunti (utente, 2026-10-06)
 - [x] Chiave di firma creata (`%USERPROFILE%\.bls-tracker` + copia in `keys/`, esclusa da git); skill AI-hub `android-release-signing`
+- [x] Sito online su GitHub Pages (2026-10-06) con metadati di anteprima (Open Graph/Twitter)
+- [x] Release v1.0.0 pubblicata da GitHub Actions; APK scaricato dalla release con firma verificata (SHA-256 db29…67e6)
