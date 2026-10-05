@@ -32,3 +32,8 @@
   border-radius: 1px;
   background: var(--text);
 }
+.week-seg--recap {
+  background: repeating-linear-gradient(135deg, var(--muted) 0 3px, transparent 3px 6px);
+  opacity: .7;
+}
+.no-recap-bar .week-seg--recap { display: none; }

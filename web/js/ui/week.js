@@ -42,6 +42,8 @@ export function buildWeek(schedule) {
       const offEnd = next ? mod(weekOffset(next.start) - s, WEEK) : dur;
       addSeg(f.track, mod(s + off, WEEK), offEnd - off, ["week-seg--ev", "week-seg--phase"], phaseLabel(p));
     });
+    // Riepilogo passivo (es. Torte): tratto grigio dopo l'evento, nascosto con l'interruttore "Riepilogo nella barra".
+    if (ev.recap) addSeg(f.track, mod(s + dur, WEEK), spanOf(ev.end, ev.recap.end), ["week-seg--recap"], t("phases.riepilogo"));
     return row;
   }));
 }
