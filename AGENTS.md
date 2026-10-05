@@ -41,18 +41,24 @@ https://github.com/Alessio-Galbo/Burraco-la-Sfida
 ## Mappe
 | Area | Mappa | Contenuto |
 |---|---|---|
-| `tests/` | [tests](docs/maps/tests.md) | 3 file, es. ics.test.mjs, schedule-cases.json, schedule.test.mjs |
-| `tools/` | [tools](docs/maps/tools.md) | 5 file in ics/ |
-| `web/` | [web](docs/maps/web.md) | 6 file in data/, js/, locales/ |
-| `misc` | [misc](docs/maps/misc.md) | file nella root |
+| `tests/` | [tests](docs/maps/tests.md) | 4 file, es. ics.test.mjs, recap.test.mjs, schedule-cases.json |
+| `tools/` | [tools](docs/maps/tools.md) | Strumenti del progetto |
+| `web/` | [web](docs/maps/web.md) | 4 file in data/, locales/ |
+| `web/css/` | [web-css](docs/maps/web-css.md) | 12 file, es. base.css, events.css, guide.css |
+| `web/js/` | [web-js](docs/maps/web-js.md) | 30 file in core/, notify/, schedule/, ui/ |
+| `web/partials/` | [web-partials](docs/maps/web-partials.md) | 3 file, es. guide.html, info.html, templates.html |
+| `misc` | [misc](docs/maps/misc.md) | file nella root e cartelle piccole: docs/ |
 ## Avvio e test
 - servizio `PWA locale`: porta 8106 · `python -m http.server 8106 --directory web`
 ## Regole
 - globali: `~/.claude/CLAUDE.md` e `~/.gemini/GEMINI.md` (generate da AI-hub)
 ## Skill attive
-- per tag: app-icon-generation, headless-chrome-cdp, modern-web-guidance, pwa-service-worker-checklist
+- per tag: android-appwidget-fluid, android-cli, android-release-signing, app-icon-generation, headless-chrome-cdp, modern-web-guidance, pwa-service-worker-checklist, recurring-weekly-schedule, web-share-social-preview
 ## Dati
-- [android/](android/): 16 file .kt/.kts, nome = nomi vari (es. Schedule.kt), ultimo 2026-10-05
+- [android/](android/): 128 file .xml/.kt, nome = nomi vari (es. AndroidManifest.xml), ultimo 2026-10-06
+- [reference/](reference/): 307 file .png/.txt, nome = nomi vari (es. all_140x140.png), ultimo 2026-10-06
+- [web/img/](web/img/): 27 file .svg/.png, nome = nomi vari (es. android.svg), ultimo 2026-10-06
 ## Non qui
-- `.agents/`, `.claude/`: config dei tool AI
+- `.agents/`, `.claude/`, `.github/`: config dei tool AI
+- `keys/`: ignorata da git
 <!-- hub:map:end -->
