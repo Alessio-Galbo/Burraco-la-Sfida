@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tutti i testi dell'app (nessun testo nel codice Kotlin). -->
+<resources>
+    <string name="app_name">BlS Tracker – Eventi del Circolo per Burraco la Sfida</string>
+    <string name="launcher_name">BlS Tracker</string>
+    <string name="header_title">Burraco la Sfida</string>
+    <string name="header_sub">Eventi del Circolo</string>
+    <string name="widget_label">BlS Tracker</string>
+    <string name="widget_description">Countdown degli eventi settimanali di Burraco La Sfida</string>
+
+    <string name="event_corsa">Corsa Pazza</string>
+    <string name="event_baule">Baule di Squadra</string>
+    <string name="event_torte">La Sfida Delle Torte</string>
+    <string name="short_corsa">Corsa</string>
+    <string name="short_baule">Baule</string>
+    <string name="short_torte">Torte</string>
+    <string name="phase_mestolo">Colpi di mestolo</string>
+    <string name="phase_forno">Torte in forno</string>
+    <string name="phase_crema">Crema e meringhe</string>
+    <string name="phase_oro">Torta d\'oro</string>
+    <string name="phase_with_mode">%1$s (%2$s)</string>
+    <string name="icon_name">%1$s %2$s</string>
+
+    <string name="status_live">In corso</string>
+    <string name="status_next">In arrivo</string>
+    <string name="until_fmt">fino a %1$s</string>
+    <string name="starts_fmt">inizia %1$s</string>
+    <string name="estimated_fmt">≈%1$s</string>
+    <string name="phase_line_fmt">%1$s · fino a %2$s</string>
+    <string name="time_pattern">EEE HH:mm</string>
+    <string name="days_hours">%1$dg %2$dh</string>
+    <string name="chrono_format">%s</string>
+    <string name="preview_phase">Torta d\'oro (2vs2)</string>
+    <string name="preview_countdown">16:49:06</string>
+    <string name="label_end">finisce tra</string>
+    <string name="label_start">inizia tra</string>
+    <string name="label_line_fmt">%1$s · %2$s</string>
+    <string name="span_fmt">%1$s → %2$s · durata %3$s</string>
+
+    <string name="config_title">Cosa mostra il widget?</string>
+    <string name="config_hint">Puoi cambiarlo quando vuoi: tieni premuto il widget (Android 12+) oppure dall\'app.</string>
+    <string name="mode_all">Tutti gli eventi</string>
+    <string name="mode_next">Prossimo o in corso</string>
+    <string name="config_look">Aspetto</string>
+    <string name="config_save">Salva</string>
+    <string name="style_section">Stile predefinito</string>
+    <string name="style_hint">Vale per l\'app e per i nuovi widget; ogni widget può avere il suo.</string>
+    <string name="style_theme">Stile</string>
+    <string name="style_icons">Icone</string>
+    <string name="theme_game">Gioco</string>
+    <string name="theme_light">Chiaro</string>
+    <string name="theme_system">Sistema</string>
+    <string name="icons_emoji">Emoji</string>
+    <string name="icons_svg">SVG</string>
+    <string name="style_recap">Mostra il riepilogo nella barra delle Torte</string>
+    <string name="recap_line_fmt">Riepilogo · fino a %1$s</string>
+
+    <string name="main_status_title">Adesso</string>
+    <string name="share">Condividi</string>
+    <string name="share_title">Condividi con…</string>
+    <string name="share_text">Burraco la Sfida: Eventi del Circolo – timer degli eventi settimanali, calendari e widget Android: https://alessio-galbo.github.io/Burraco-la-Sfida/</string>
+    <string name="open_game">Apri il gioco</string>
+    <string name="notif_section">Notifiche</string>
+    <string name="notif_event_fmt">Inizio di %1$s</string>
+    <string name="notif_phases">Torte: anche a ogni cambio fase</string>
+    <string name="notif_lead">Avvisa prima</string>
+    <string name="lead_0">All\'inizio</string>
+    <string name="lead_fmt">%1$d min</string>
+    <string name="notif_denied">Permesso negato: le notifiche non verranno mostrate.</string>
+    <string name="widget_section">Widget</string>
+    <string name="add_widget">Aggiungi widget</string>
+    <string name="add_widget_manual">Tieni premuto sulla Home → Widget → BlS Tracker.</string>
+    <string name="preview_section">Anteprima widget</string>
+    <string name="preview_all">Tutti gli eventi</string>
+    <string name="preview_next">Prossimo o in corso</string>
+    <string name="preview_single">Singolo evento</string>
+    <string name="pwa_link">Apri la versione web (anche per iPhone)</string>
+    <string name="game_title">Il gioco</string>
+    <string name="game_intro">Burraco Online: La Sfida è sviluppato da WhatWapp. Canali ufficiali:</string>
+    <string name="play_link">Google Play</string>
+    <string name="appstore_link">App Store</string>
+    <string name="appstore_url">https://apps.apple.com/it/app/burraco-italiano-la-sfida/id1019117289</string>
+    <string name="support_title">Supporta il progetto</string>
+    <string name="support_text">Il sito e l\'app sono gratuiti e senza pubblicità. Se ti sono utili, puoi offrirmi un caffè.</string>
+    <string name="pwa_url">https://alessio-galbo.github.io/Burraco-la-Sfida/</string>
+    <string name="disclaimer">Progetto di fan non ufficiale, non affiliato a WhatWapp. Burraco La Sfida è un marchio dei rispettivi proprietari.</string>
+    <string name="official_link">Sito ufficiale</string>
+    <string name="kofi">Offrimi un caffè su Ko-fi</string>
+    <string name="kofi_url">https://ko-fi.com/devangel</string>
+    <string name="official_url">https://whatwapp.com/burraco-la-sfida/</string>
+    <string name="store_url">https://play.google.com/store/apps/details?id=com.WhatWapp.BurracoOnline</string>
+
+    <string name="update_text_fmt">Nuova versione %1$s disponibile</string>
+    <string name="update_download">Scarica</string>
+    <string name="update_later">Più tardi</string>
+    <string name="update_url">https://github.com/Alessio-Galbo/Burraco-la-Sfida/releases/latest/download/burraco-widget.apk</string>
+    <string name="privacy_net">L\'app si collega solo a GitHub per gli orari aggiornati e per sapere se c\'è una nuova versione. Nessun dato personale inviato.</string>
+
+    <string name="channel_name">Eventi del gioco</string>
+    <string name="channel_desc">Avvisi di inizio eventi e cambi fase delle Torte</string>
+    <string name="notif_phase_title">%1$s Nuova fase: %2$s</string>
+    <string name="notif_now">Inizia adesso!</string>
+    <string name="notif_soon_fmt">Inizia tra %1$d minuti</string>
+</resources>

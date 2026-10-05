@@ -1,0 +1,50 @@
+/* Righe evento compatte (~64px) espandibili: un colore per evento, punto "live", countdown a destra. */
+.ev--corsa { --ev: var(--corsa); }
+.ev--baule { --ev: var(--baule); }
+.ev--torte { --ev: var(--torte); }
+.events { display: grid; gap: 6px; }
+.ev {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-panel);
+}
+.ev[open] { background: var(--surface-2); }
+.ev-row {
+  display: grid;
+  grid-template-columns: 30px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 62px;
+  padding: 8px 12px;
+  list-style: none;
+  cursor: pointer;
+}
+.ev-row::-webkit-details-marker { display: none; }
+.ev-icon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--ev) 16%, transparent);
+  font-size: 18px;
+  line-height: 1;
+}
+.ev-main { display: grid; min-width: 0; }
+.ev-name { font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ev-sub { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ev-side { display: grid; justify-items: end; gap: 2px; }
+.ev-count { font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.state { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; color: var(--muted); }
+.state .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: .6; }
+.is-next .state { color: var(--gold-text, var(--gold)); }
+.is-next .ev-count { color: var(--gold-text, var(--gold)); }
+.is-active .state { color: var(--live); }
+.is-active .state .dot { opacity: 1; animation: live 1.6s ease-in-out infinite; }
+@keyframes live { 50% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--live) 25%, transparent); } }
+@media (prefers-reduced-motion: reduce) { .is-active .state .dot { animation: none; } }
+.ev-detail { margin: 0 12px; padding: 10px 0 12px; border-top: 1px solid var(--line); font-size: 12px; }
+.ev summary:focus-visible { outline-offset: -2px; border-radius: inherit; }
+@media (min-width: 720px) {
+  .ev-count { font-size: 20px; }
+}

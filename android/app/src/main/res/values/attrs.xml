@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Colori delle activity per tema (AppTheme, AppTheme.Light, AppTheme.System): layout e drawable usano ?attr/. -->
+<resources>
+    <attr name="appBg" format="color|reference" />
+    <attr name="appSurface" format="color|reference" />
+    <attr name="appSurface2" format="color|reference" />
+    <attr name="appLine" format="color|reference" />
+    <attr name="appText" format="color|reference" />
+    <attr name="appTextDim" format="color|reference" />
+    <attr name="appAccent" format="color|reference" />
+    <attr name="appOnAccent" format="color|reference" />
+    <attr name="appLink" format="color|reference" />
+</resources>

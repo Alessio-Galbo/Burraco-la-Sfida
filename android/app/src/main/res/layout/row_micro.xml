@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Riga micro (widget "tutti" piccolissimo): barretta colore evento e countdown che riempie la riga. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+    android:gravity="center_vertical" android:orientation="horizontal">
+    <ImageView android:id="@+id/accent" android:layout_width="3dp" android:layout_height="match_parent"
+        android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:layout_marginEnd="5dp"
+        android:src="@drawable/accent_bar" android:scaleType="fitXY" android:importantForAccessibility="no" />
+    <Chronometer android:id="@+id/chrono" style="@style/AutoCountdown" android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="1" android:autoSizeMaxTextSize="18sp" />
+    <TextView android:id="@+id/when" style="@style/AutoCountdown" android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="1" android:autoSizeMaxTextSize="13sp"
+        android:visibility="gone" />
+</LinearLayout>

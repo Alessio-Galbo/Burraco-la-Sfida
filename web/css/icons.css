@@ -1,0 +1,43 @@
+/* Icone monocromatiche (SVG come maschera): pulsanti, Ko-fi e icone degli eventi (emoji o SVG). */
+.ico {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background: currentColor;
+  -webkit-mask: var(--ico) center / contain no-repeat;
+  mask: var(--ico) center / contain no-repeat;
+}
+.ico-android { --ico: url("../img/icons/android.svg"); }
+.ico-play { --ico: url("../img/icons/googleplay.svg"); }
+.ico-appstore { --ico: url("../img/icons/appstore.svg"); }
+.ico-globe { --ico: url("../img/icons/globe.svg"); }
+.ico-left { --ico: url("../img/icons/chevron-left.svg"); }
+.ico-right { --ico: url("../img/icons/chevron-right.svg"); }
+.ico-x { --ico: url("../img/icons/x.svg"); }
+.ico-kofi { --ico: url("../img/icons/kofi.svg"); }
+.support { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.btn-kofi { background: #ff5e5b; color: #fff; }
+.footer-kofi { display: inline-flex; align-items: center; color: var(--muted); font-size: 12px; }
+.footer-kofi:hover { color: #ff5e5b; }
+.footer-kofi .ico { width: 14px; height: 14px; }
+/* Icone evento: emoji oppure SVG Lucide monocromatico nel colore dell'evento ([data-icons="svg"] su <html>). */
+.evi { position: relative; display: inline-block; line-height: 1; }
+.evi--corsa { --ev: var(--corsa); --evico: url("../img/icons/ev-rabbit.svg"); }
+.evi--baule { --ev: var(--baule); --evico: url("../img/icons/ev-package.svg"); }
+.evi--torte { --ev: var(--torte); --evico: url("../img/icons/ev-cake.svg"); }
+[data-icons="svg"] .evi-e { visibility: hidden; }
+[data-icons="svg"] .evi::before {
+  content: "";
+  position: absolute;
+  inset: -.1em 0;
+  background: var(--ev);
+  -webkit-mask: var(--evico) center / contain no-repeat;
+  mask: var(--evico) center / contain no-repeat;
+}
+.ico-share { --ico: url("../img/icons/share-2.svg"); }
+.ico-wa { --ico: url("../img/icons/whatsapp.svg"); }
+.ico-tg { --ico: url("../img/icons/telegram.svg"); }
+.ico-ig { --ico: url("../img/icons/instagram.svg"); }
+.ico-mail { --ico: url("../img/icons/mail.svg"); }
+.ico-link { --ico: url("../img/icons/link.svg"); }

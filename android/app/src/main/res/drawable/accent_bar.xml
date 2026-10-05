@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Barra verticale colorata a sinistra della riga (colore dell'evento via setColorFilter). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFFFF" />
+    <corners android:radius="2dp" />
+</shape>

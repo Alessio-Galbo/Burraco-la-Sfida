@@ -1,0 +1,90 @@
+<!-- Pagina principale della PWA: barra, tab a segmenti, Timer e Settimana; testi da locales/it.json, altre sezioni in partials/. -->
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Burraco la Sfida: Eventi del Circolo</title>
+  <meta name="description" data-i18n-content="app.description">
+  <meta name="theme-color" content="#0b5fb0">
+  <meta name="apple-mobile-web-app-title" content="BlS Tracker">
+  <meta name="application-name" content="BlS Tracker">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/shell.css">
+  <link rel="stylesheet" href="css/events.css">
+  <link rel="stylesheet" href="css/span.css">
+  <link rel="stylesheet" href="css/torte.css">
+  <link rel="stylesheet" href="css/week.css">
+  <link rel="stylesheet" href="css/guide.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/viewer.css">
+  <link rel="stylesheet" href="css/shots.css">
+  <link rel="stylesheet" href="css/share.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <script src="js/theme-boot.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <header class="appbar">
+    <img src="icons/icon.svg" alt="" width="28" height="28">
+    <h1 data-i18n-aria="app.short"><span class="brand" data-i18n="app.brand"></span><span class="brand-sub" data-i18n="app.sub"></span></h1>
+    <button type="button" id="share-top" class="appbar-share" data-i18n-aria="share.button"><span class="ico ico-share" aria-hidden="true"></span></button>
+  </header>
+  <nav class="tabs" data-i18n-aria="nav.label">
+    <div class="tabs-seg" role="tablist">
+    <button type="button" role="tab" data-tab="timer" data-i18n="nav.timers"></button>
+    <button type="button" role="tab" data-tab="settimana" data-i18n="nav.week"></button>
+    <button type="button" role="tab" data-tab="avvisi" data-i18n="nav.alerts"></button>
+    <button type="button" role="tab" data-tab="scarica" data-i18n="nav.download"></button>
+    <button type="button" role="tab" data-tab="info" data-i18n="nav.info"></button>
+    </div>
+  </nav>
+  <main>
+    <p id="loading" class="notice" data-i18n="app.loading"></p>
+    <section id="timer" class="view" role="tabpanel">
+      <div class="sec-head">
+        <h2 class="label" data-i18n="status.events"></h2>
+        <div class="seg" role="group" data-i18n-aria="view.label">
+          <button type="button" data-view="all" data-i18n="view.all"></button>
+          <button type="button" data-view="next" data-i18n="view.next"></button>
+        </div>
+      </div>
+      <div id="events" class="events"></div>
+      <div class="panel torte" id="torte">
+        <div class="torte-head">
+          <span class="label" data-i18n="status.torteTitle"></span>
+          <span class="torte-days small muted" id="torte-days"></span>
+        </div>
+        <div class="pbar" id="pbar"></div>
+        <div class="torte-foot">
+          <span class="torte-phase" id="torte-phase"></span>
+          <span class="torte-left" id="torte-left"></span>
+        </div>
+      </div>
+      <p class="foot"><span id="est-note" data-i18n="status.estimatedNote" hidden></span> <span data-i18n="status.footnote"></span></p>
+    </section>
+    <section id="settimana" class="view" role="tabpanel" hidden>
+      <div class="sec-head"><h2 class="label" data-i18n="week.title"></h2></div>
+      <div class="panel week">
+        <div class="week-head" id="week-head"></div>
+        <div id="week-rows" class="week-rows"></div>
+      </div>
+      <p class="foot" data-i18n="week.intro"></p>
+    </section>
+    <div id="guide"></div>
+    <div id="info-part"></div>
+  </main>
+  <footer class="footer">
+    <p data-i18n="footer.disclaimer"></p>
+    <p><a class="footer-kofi" href="https://ko-fi.com/devangel" target="_blank" rel="noopener"><span class="ico ico-kofi" aria-hidden="true"></span><span data-i18n="support.button"></span></a></p>
+  </footer>
+  <div id="templates" hidden></div>
+</body>
+</html>

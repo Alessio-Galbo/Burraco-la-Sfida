@@ -1,0 +1,60 @@
+<!-- Template HTML clonati dal JS (righe evento, icone evento, fasi, settimana, avvisi, calendari, anteprime): niente HTML nelle stringhe JS. -->
+<template id="tpl-event">
+  <details class="ev">
+    <summary class="ev-row">
+      <span class="ev-icon" data-f="icon"></span>
+      <span class="ev-main"><span class="ev-name" data-f="name"></span><span class="ev-sub" data-f="sub"></span></span>
+      <span class="ev-side">
+        <span class="state" data-f="state"><span class="dot"></span><span data-f="stateText"></span></span>
+        <span class="ev-count" data-f="count"></span>
+      </span>
+    </summary>
+    <div class="ev-detail">
+      <div class="ev-span">
+        <p class="ev-end-l"><span data-i18n="status.starts"></span><b data-f="start"></b></p>
+        <p class="ev-end-r"><span data-i18n="status.ends"></span><b data-f="end"></b></p>
+        <div class="ev-track" data-f="track"><span class="ev-fill"></span><span class="ev-now"></span></div>
+      </div>
+      <ol class="phases" data-f="phases" hidden></ol>
+    </div>
+  </details>
+</template>
+
+<template id="tpl-phase">
+  <li class="phase"><span class="phase-dot"></span><span class="phase-main"><span class="phase-name" data-f="name"></span><span class="mode" data-f="mode"></span></span><span class="phase-time" data-f="time"></span></li>
+</template>
+
+<template id="tpl-pseg"><span class="pseg"><span class="pseg-fill"></span></span></template>
+
+<template id="tpl-week-row">
+  <div class="week-row">
+    <div class="week-label"><span data-f="name"></span><span class="muted" data-f="range"></span></div>
+    <div class="week-track" data-f="track"><span class="week-now"></span></div>
+  </div>
+</template>
+
+<template id="tpl-week-seg"><span class="week-seg"></span></template>
+
+<template id="tpl-day"><span class="week-day"></span></template>
+
+<template id="tpl-alert-event">
+  <label class="switch-row"><span data-f="name"></span><input type="checkbox" class="switch" data-f="box"></label>
+</template>
+
+<template id="tpl-evi"><span class="evi" aria-hidden="true"><span class="evi-e" data-f="e"></span></span></template>
+
+<template id="tpl-option"><option></option></template>
+
+<template id="tpl-calendar">
+  <li class="cal">
+    <span class="cal-name" data-f="name"></span>
+    <a class="btn btn-sm btn-ghost" data-f="add" download data-i18n="calendars.add"></a>
+  </li>
+</template>
+
+<template id="tpl-shot">
+  <figure class="shot">
+    <button type="button" class="shot-btn" data-f="btn"><img data-f="img" alt="" loading="lazy"></button>
+    <figcaption data-f="cap"></figcaption>
+  </figure>
+</template>

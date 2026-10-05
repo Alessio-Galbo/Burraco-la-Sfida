@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Anteprima statica nel selettore widget (Android 12+): esempio Torte in corso con fase. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/widget_bg" android:gravity="center_vertical" android:orientation="vertical"
+    android:padding="@dimen/widget_pad">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium" android:text="@string/event_torte" android:textColor="@color/text"
+        android:textSize="14sp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="3dp" android:drawableStart="@drawable/dot_live" android:drawablePadding="4dp"
+        android:text="@string/status_live" android:textColor="@color/text_dim" android:textSize="@dimen/text_s" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" android:text="@string/preview_phase" android:textColor="@color/torte"
+        android:textSize="12sp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:text="@string/preview_countdown" android:textColor="@color/live"
+        android:textSize="@dimen/text_l" android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Schermata principale compatta: header, banner nuova versione, stato (righe come il widget), azioni, avvisi, anteprima, link, avviso fan e nota privacy. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="?attr/appBg" android:orientation="vertical">
+    <LinearLayout android:id="@+id/header" android:layout_width="match_parent" android:layout_height="52dp"
+        android:background="@drawable/header_bg" android:gravity="center_vertical" android:orientation="horizontal"
+        android:paddingStart="16dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/header_title" android:textColor="#FFFFFF" android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/header_sub" android:textColor="#DDEBFF" android:textSize="12sp" />
+        </LinearLayout>
+        <ImageButton android:id="@+id/share" android:layout_width="44dp" android:layout_height="44dp"
+            android:layout_marginEnd="6dp" android:background="@drawable/button_round"
+            android:contentDescription="@string/share" android:src="@drawable/ic_share" />
+    </LinearLayout>
+    <include android:id="@+id/update_banner" layout="@layout/part_update" />
+    <ScrollView android:id="@+id/main_scroll" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:paddingStart="@dimen/screen_pad"
+            android:paddingEnd="@dimen/screen_pad" android:paddingBottom="@dimen/screen_pad">
+            <LinearLayout android:id="@+id/main_sections" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView style="@style/SectionTitle" android:text="@string/main_status_title" />
+                <LinearLayout android:id="@+id/status_list" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:orientation="horizontal">
+                    <Button android:id="@+id/open_game" style="@style/GoldButton" android:layout_width="0dp"
+                        android:layout_weight="1" android:layout_marginEnd="8dp" android:text="@string/open_game" />
+                    <Button android:id="@+id/add_widget" style="@style/OutlineButton" android:layout_width="0dp"
+                        android:layout_weight="1" android:text="@string/add_widget" />
+                </LinearLayout>
+                <TextView style="@style/SectionTitle" android:text="@string/notif_section" />
+                <LinearLayout android:id="@+id/notif_list" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical" />
+                <Switch android:id="@+id/notif_phases" style="@style/SettingSwitch" android:text="@string/notif_phases" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" android:text="@string/notif_lead"
+                    android:textColor="?attr/appTextDim" android:textSize="12sp" />
+                <RadioGroup android:id="@+id/lead_group" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="horizontal" />
+            </LinearLayout>
+            <TextView style="@style/SectionTitle" android:text="@string/style_section" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" android:text="@string/style_hint"
+                android:textColor="?attr/appTextDim" android:textSize="12sp" />
+            <include android:id="@+id/main_style" layout="@layout/part_style" />
+            <TextView android:id="@+id/preview_title" style="@style/SectionTitle" android:text="@string/preview_section" />
+            <LinearLayout android:id="@+id/preview_list" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical" />
+            <LinearLayout android:id="@+id/footer" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView style="@style/SectionTitle" android:text="@string/game_title" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/game_intro" android:textColor="?attr/appTextDim" android:textSize="12sp" />
+                <Button android:id="@+id/link_official" style="@style/LinkButton" android:drawableStart="@drawable/ic_globe"
+                    android:text="@string/official_link" />
+                <Button android:id="@+id/link_play" style="@style/LinkButton" android:drawableStart="@drawable/ic_googleplay"
+                    android:text="@string/play_link" />
+                <Button android:id="@+id/link_appstore" style="@style/LinkButton" android:drawableStart="@drawable/ic_appstore"
+                    android:text="@string/appstore_link" />
+                <Button android:id="@+id/link_pwa" style="@style/LinkButton" android:drawableStart="@drawable/ic_globe"
+                    android:text="@string/pwa_link" />
+                <TextView style="@style/SectionTitle" android:text="@string/support_title" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:gravity="center" android:text="@string/support_text" android:textColor="?attr/appText"
+                    android:textSize="@dimen/text_m" />
+                <Button android:id="@+id/kofi" android:layout_width="wrap_content" android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"
+                    android:background="@drawable/button_kofi" android:drawableStart="@drawable/ic_cup"
+                    android:drawablePadding="8dp" android:paddingStart="14dp" android:paddingEnd="16dp"
+                    android:stateListAnimator="@null" android:text="@string/kofi" android:textAllCaps="false"
+                    android:textColor="#FFFFFF" android:textSize="13sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" android:gravity="center" android:text="@string/disclaimer"
+                    android:textColor="?attr/appTextDim" android:textSize="@dimen/text_s" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:gravity="center" android:text="@string/privacy_net"
+                    android:textColor="?attr/appTextDim" android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

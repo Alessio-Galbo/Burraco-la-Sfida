@@ -1,0 +1,35 @@
+{
+  "_doc": "Unica fonte degli orari settimanali (ora italiana). day: 1=lunedì ... 7=domenica. Ogni fase finisce dove inizia la successiva; l'ultima finisce con l'evento (Torte: domenica 22:00, il riepilogo successivo è escluso). recap: riepilogo passivo dalla fine evento a recap.end, non cambia stato né countdown (Android: segmento facoltativo nella barra Torte). estimated=true: orario non confermato. Letto dalla PWA, dal generatore .ics e dall'app Android (assets, poi copia scaricata dal sito al massimo ogni 24 h).",
+  "version": 1,
+  "updated": "2026-10-06",
+  "timezone": "Europe/Rome",
+  "events": [
+    {
+      "id": "corsa",
+      "icon": "🐰",
+      "start": { "day": 1, "time": "12:00" },
+      "end": { "day": 5, "time": "00:00" },
+      "phases": []
+    },
+    {
+      "id": "baule",
+      "icon": "📦",
+      "start": { "day": 3, "time": "02:00" },
+      "end": { "day": 6, "time": "02:00" },
+      "phases": []
+    },
+    {
+      "id": "torte",
+      "icon": "🎂",
+      "start": { "day": 5, "time": "16:00" },
+      "end": { "day": 7, "time": "22:00" },
+      "phases": [
+        { "id": "mestolo", "mode": "2vs2", "start": { "day": 5, "time": "16:00" } },
+        { "id": "forno", "mode": "1vs1", "start": { "day": 6, "time": "00:00" } },
+        { "id": "crema", "mode": "1vs1", "start": { "day": 6, "time": "16:00" } },
+        { "id": "oro", "mode": "2vs2", "start": { "day": 7, "time": "00:00" } }
+      ],
+      "recap": { "id": "riepilogo", "end": { "day": 1, "time": "13:00" } }
+    }
+  ]
+}

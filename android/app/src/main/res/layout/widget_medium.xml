@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Widget medio (2×2, stretto e alto): blocco centrato con nome, countdown grande, riga stato o fase, barretta. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/widget_bg" android:gravity="center_vertical" android:orientation="vertical"
+    android:padding="12dp">
+    <include layout="@layout/part_header" />
+    <Chronometer android:id="@+id/chrono" style="@style/AutoCountdown" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:minHeight="36dp" android:layout_marginTop="4dp"
+        android:autoSizeMaxTextSize="28sp" />
+    <TextView android:id="@+id/when" style="@style/AutoCountdown" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:minHeight="36dp" android:layout_marginTop="4dp"
+        android:autoSizeMaxTextSize="20sp"
+        android:visibility="gone" />
+    <TextView android:id="@+id/line" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" android:maxLines="2" android:textColor="@color/text_dim"
+        android:textSize="12sp" />
+    <include layout="@layout/part_segments" />
+    <ProgressBar android:id="@+id/prog" style="@style/Bar" android:layout_width="match_parent"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+# Limite di righe per file: letto da AI-hub tools/check_line_limits.py.
+# Esclusi: dati (json), file generati (web/calendar/*.ics), markdown, risorse XML di Android.
+limit = 100
+warn = 90
+include = *.js *.mjs *.css *.html *.kt *.kts *.py

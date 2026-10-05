@@ -1,0 +1,54 @@
+<!-- Sezione a tab Info: aspetto (stile, icone, riepilogo Torte), link ufficiali del gioco, supporto e note sugli orari. -->
+<section id="info" class="view" role="tabpanel" hidden>
+  <div class="sec-head"><h2 class="label" data-i18n="look.title"></h2></div>
+  <div class="panel list">
+    <div class="switch-row"><span data-i18n="look.theme"></span>
+      <div class="seg" role="group" data-i18n-aria="look.themeLabel">
+        <button type="button" data-look-theme="game" data-i18n="look.themes.game"></button>
+        <button type="button" data-look-theme="light" data-i18n="look.themes.light"></button>
+        <button type="button" data-look-theme="system" data-i18n="look.themes.system"></button>
+      </div>
+    </div>
+    <div class="switch-row"><span data-i18n="look.icons"></span>
+      <div class="seg" role="group" data-i18n-aria="look.iconsLabel">
+        <button type="button" data-look-icons="emoji" data-i18n="look.iconSet.emoji"></button>
+        <button type="button" data-look-icons="svg" data-i18n="look.iconSet.svg"></button>
+      </div>
+    </div>
+    <label class="switch-row"><span data-i18n="look.recapBar"></span><input type="checkbox" class="switch" id="look-recap-bar"></label>
+  </div>
+  <div class="sec-head"><h2 class="label" data-i18n="share.title"></h2></div>
+  <div id="share" class="panel pad share">
+    <p class="small" data-i18n="share.text"></p>
+    <button type="button" id="share-native" class="btn" hidden><span class="ico ico-share" aria-hidden="true"></span><span data-i18n="share.button"></span></button>
+    <div class="share-grid">
+      <a class="btn btn-sm btn-ghost" id="share-wa" target="_blank" rel="noopener"><span class="ico ico-wa" aria-hidden="true"></span><span data-i18n="share.whatsapp"></span></a>
+      <a class="btn btn-sm btn-ghost" id="share-tg" target="_blank" rel="noopener"><span class="ico ico-tg" aria-hidden="true"></span><span data-i18n="share.telegram"></span></a>
+      <button type="button" class="btn btn-sm btn-ghost" id="share-ig"><span class="ico ico-ig" aria-hidden="true"></span><span data-i18n="share.instagram"></span></button>
+      <a class="btn btn-sm btn-ghost" id="share-mail"><span class="ico ico-mail" aria-hidden="true"></span><span data-i18n="share.email"></span></a>
+      <button type="button" class="btn btn-sm btn-ghost" id="share-copy"><span class="ico ico-link" aria-hidden="true"></span><span data-i18n="share.copy"></span></button>
+    </div>
+    <p class="small muted" id="share-done" role="status" hidden></p>
+    <figure class="share-qr"><img src="img/qr-site.svg" alt="" data-i18n-alt="share.qrAlt" width="140" height="140"><figcaption class="small muted" data-i18n="share.qr"></figcaption></figure>
+  </div>
+  <div class="sec-head"><h2 class="label" data-i18n="game.title"></h2></div>
+  <div class="panel pad">
+    <p class="lead-text" data-i18n="game.intro"></p>
+    <p class="links">
+      <a class="btn btn-sm btn-ghost" href="https://whatwapp.com/burraco-la-sfida/" rel="noopener"><span class="ico ico-globe" aria-hidden="true"></span><span data-i18n="game.site"></span></a>
+      <a class="btn btn-sm btn-ghost" href="https://play.google.com/store/apps/details?id=com.WhatWapp.BurracoOnline" rel="noopener"><span class="ico ico-play" aria-hidden="true"></span><span data-i18n="game.play"></span></a>
+      <a class="btn btn-sm btn-ghost" href="https://apps.apple.com/it/app/burraco-italiano-la-sfida/id1019117289" rel="noopener"><span class="ico ico-appstore" aria-hidden="true"></span><span data-i18n="game.appStore"></span></a>
+    </p>
+  </div>
+  <div class="sec-head"><h2 class="label" data-i18n="support.title"></h2></div>
+  <div class="panel pad support">
+    <p class="small" data-i18n="support.text"></p>
+    <a class="btn btn-kofi" href="https://ko-fi.com/devangel" target="_blank" rel="noopener"><span class="ico ico-kofi" aria-hidden="true"></span><span data-i18n="support.button"></span></a>
+  </div>
+  <div class="sec-head"><h2 class="label" data-i18n="footer.about"></h2></div>
+  <div class="panel pad">
+    <p class="small" data-i18n="footer.timesNote"></p>
+    <p class="small muted" id="updated"></p>
+    <p class="small"><a href="https://github.com/Alessio-Galbo/Burraco-la-Sfida" data-i18n="footer.source"></a></p>
+  </div>
+</section>

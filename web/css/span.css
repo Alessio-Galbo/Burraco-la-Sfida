@@ -1,0 +1,52 @@
+/* Mini timeline inizio → fine nel dettaglio evento: date ai lati, linea nel colore dell'evento con avanzamento e "adesso". */
+.ev-span {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 6px;
+  margin: 0;
+}
+.ev-span p { margin: 0; display: flex; flex-direction: column; gap: 1px; }
+.ev-span p span { color: var(--muted); font-size: 11px; }
+.ev-span p b { font-size: 13px; font-weight: 600; }
+.ev-end-r { text-align: right; align-items: flex-end; }
+.ev-track {
+  --p: 0;
+  position: relative;
+  grid-column: 1 / -1;
+  height: 4px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ev) 22%, transparent);
+}
+.ev-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(var(--p) * 100%);
+  border-radius: inherit;
+  background: var(--ev);
+}
+.ev-now {
+  position: absolute;
+  top: 50%;
+  left: calc(var(--p) * 100%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ev);
+  box-shadow: 0 0 0 2px var(--surface);
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.is-active .ev-now { display: block; }
+.ev-track::before, .ev-track::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  height: 10px;
+  border-radius: 1px;
+  background: var(--ev);
+  transform: translateY(-50%);
+}
+.ev-track::before { left: 0; }
+.ev-track::after { right: 0; opacity: .5; }
+.ev-span + .phases { margin-top: 12px; }

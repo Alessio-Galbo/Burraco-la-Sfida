@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icona "Condividi" (tre nodi collegati, stile Lucide share-2; disegno nostro), bianca per l'header. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="22dp" android:height="22dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:pathData="M18 2a3 3 0 1 1 0 6a3 3 0 1 1 0-6z M6 9a3 3 0 1 1 0 6a3 3 0 1 1 0-6z M18 16a3 3 0 1 1 0 6a3 3 0 1 1 0-6z"
+        android:strokeColor="#FFFFFFFF" android:strokeWidth="2" />
+    <path android:pathData="M8.6 13.5l6.8 4 M15.4 6.5l-6.8 4" android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2" android:strokeLineCap="round" />
+</vector>

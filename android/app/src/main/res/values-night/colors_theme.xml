@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tema Sistema con telefono in modalità scura sotto Android 12: ricade sui colori di Gioco. -->
+<resources>
+    <color name="s_bg">@color/bg</color>
+    <color name="s_surface">@color/surface</color>
+    <color name="s_surface_2">@color/surface_2</color>
+    <color name="s_line">@color/line</color>
+    <color name="s_text">@color/text</color>
+    <color name="s_text_dim">@color/text_dim</color>
+    <color name="s_accent">@color/gold</color>
+    <color name="s_on_accent">@color/bg</color>
+    <color name="s_live">@color/live</color>
+    <color name="s_corsa">@color/corsa</color>
+    <color name="s_baule">@color/baule</color>
+    <color name="s_torte">@color/torte</color>
+    <color name="s_link">@color/blue</color>
+</resources>

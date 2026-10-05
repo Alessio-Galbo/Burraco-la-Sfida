@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Riga a una linea (widget "tutti" largo e basso): barra colore | icona | punto stato | nome (con barra fasi/avanzamento) | countdown. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+    android:layout_marginTop="3dp" android:background="@drawable/card_bg" android:gravity="center_vertical"
+    android:orientation="horizontal" android:paddingEnd="10dp">
+    <ImageView android:id="@+id/accent" android:layout_width="3dp" android:layout_height="match_parent"
+        android:layout_marginStart="5dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+        android:layout_marginEnd="7dp" android:src="@drawable/accent_bar" android:scaleType="fitXY"
+        android:importantForAccessibility="no" />
+    <TextView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp" android:textSize="@dimen/icon_s" />
+    <ImageView android:id="@+id/icon_img" android:layout_width="@dimen/icon_img_s" android:layout_height="@dimen/icon_img_s" android:layout_marginEnd="7dp"
+        android:importantForAccessibility="no" android:visibility="gone" />
+    <ImageView android:id="@+id/dot" android:layout_width="6dp" android:layout_height="6dp"
+        android:layout_marginEnd="6dp" android:src="@drawable/dot_live" android:importantForAccessibility="no" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2"
+        android:orientation="vertical">
+        <TextView android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:ellipsize="end" android:fontFamily="sans-serif-medium" android:maxLines="1"
+            android:textColor="@color/text" android:textSize="@dimen/text_m" />
+        <include layout="@layout/part_segments" />
+        <ProgressBar android:id="@+id/prog" style="@style/Bar" android:layout_width="match_parent"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+    <Chronometer android:id="@+id/chrono" style="@style/AutoCountdown" android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="0.8" android:layout_marginStart="6dp"
+        android:gravity="end|center_vertical" android:autoSizeMaxTextSize="20sp" />
+    <TextView android:id="@+id/when" style="@style/AutoCountdown" android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="0.8" android:layout_marginStart="6dp"
+        android:gravity="end|center_vertical" android:autoSizeMaxTextSize="14sp" android:visibility="gone" />
+</LinearLayout>

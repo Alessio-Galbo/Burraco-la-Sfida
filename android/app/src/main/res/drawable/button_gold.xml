@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pulsante principale nel colore d'accento del tema dell'app, con ripple al tocco. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#40FFFFFF">
+    <item>
+        <shape><solid android:color="?attr/appAccent" /><corners android:radius="8dp" /></shape>
+    </item>
+</ripple>

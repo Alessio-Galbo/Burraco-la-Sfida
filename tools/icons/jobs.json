@@ -1,0 +1,8 @@
+[
+  { "svg": "../../web/icons/icon.svg", "size": 192, "out": "../../web/icons/icon-192.png" },
+  { "svg": "../../web/icons/icon.svg", "size": 512, "out": "../../web/icons/icon-512.png" },
+  { "svg": "../../web/icons/icon.svg", "size": 32, "out": "../../web/icons/icon-32.png" },
+  { "svg": "icon-maskable.svg", "size": 512, "out": "../../web/icons/icon-maskable-512.png" },
+  { "svg": "icon-maskable.svg", "size": 192, "out": "../../web/icons/icon-maskable-192.png" },
+  { "svg": "icon-apple.svg", "size": 180, "out": "../../web/icons/apple-touch-icon-180.png" }
+]

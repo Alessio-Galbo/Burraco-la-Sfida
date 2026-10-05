@@ -1,0 +1,29 @@
+# Avanzamento
+
+## Ora
+- [ ] Release v1.0.0: tag `v1.0.0` → GitHub Actions compila, firma e pubblica l'APK; verifica firma dell'APK scaricato
+- [ ] Verifica sito online (GitHub Pages) e pulsante APK con versione
+
+## Prossimi
+
+## In attesa (utente)
+- [ ] Provare "Apri il gioco" su telefono reale (package `com.WhatWapp.BurracoOnline`)
+
+## Per il futuro
+- [ ] Notifiche push vere anche con PWA chiusa (serve un piccolo server Web Push, es. Cloudflare Worker gratuito)
+
+## Pronto, da confermare dall'utente
+- [ ] App: edge-to-edge, temi/icone per widget, riepilogo nella barra (attivabile), controllo aggiornamenti, orari scaricati dal sito
+- [ ] PWA: condivisione (WhatsApp/Telegram/Instagram/email/QR), galleria anteprime, timeline inizio-fine, riepilogo grigio + interruttore
+- [ ] PWA: tab compatte, righe evento espandibili, barra fasi Torte, avvisi nel browser, calendari .ics ("Aggiungi" + collegamento facoltativo)
+- [ ] PWA: icone SVG (Android, Google Play, App Store, sito, Ko-fi), visualizzatore anteprime con frasi/swipe, pulsante Ko-fi
+- [ ] PWA: titolo "Burraco la Sfida: Eventi del Circolo", layout mobile senza scroll orizzontale (verificato a 360/412px)
+- [ ] Workflow Pages (`.github/workflows/pages.yml`)
+
+## Fatto
+- [x] Pulizia della storia del repo pubblico (riferimenti esclusi con .gitignore)
+- [x] Orari condivisi in `web/data/schedule.json` + casi di test comuni
+- [x] Decisione: nessuna grafica ufficiale WhatWapp, solo grafica nostra (confermato dall'utente 2026-10-05)
+- [x] Orari confermati dall'utente (2026-10-06): Corsa fino a venerdì 00:00, Baule fino a sabato 02:00, Torte fino a domenica 22:00 (riepilogo 22:00-13:00 escluso dai timer)
+- [x] GitHub Pages attivato e 4 secret della chiave aggiunti (utente, 2026-10-06)
+- [x] Chiave di firma creata (`%USERPROFILE%\.bls-tracker` + copia in `keys/`, esclusa da git); skill AI-hub `android-release-signing`

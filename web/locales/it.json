@@ -1,0 +1,217 @@
+{
+  "app": {
+    "title": "Burraco la Sfida: Eventi del Circolo",
+    "short": "Burraco la Sfida: Eventi del Circolo",
+    "brand": "Burraco la Sfida",
+    "sub": "Eventi del Circolo",
+    "description": "Timer degli eventi settimanali di Burraco Online: La Sfida (Corsa Pazza, Baule di Squadra, La Sfida Delle Torte), con calendari e widget Android.",
+    "loading": "Caricamento…",
+    "loadError": "Impossibile caricare gli orari. Controlla la connessione e ricarica la pagina."
+  },
+  "nav": {
+    "label": "Sezioni",
+    "timers": "Timer",
+    "week": "Settimana",
+    "alerts": "Avvisi",
+    "download": "Scarica",
+    "info": "Info"
+  },
+  "events": {
+    "corsa": {
+      "name": "Corsa Pazza",
+      "iconLabel": "Coniglio"
+    },
+    "baule": {
+      "name": "Baule di Squadra",
+      "iconLabel": "Cubo"
+    },
+    "torte": {
+      "name": "La Sfida Delle Torte",
+      "iconLabel": "Torta"
+    }
+  },
+  "phases": {
+    "mestolo": "Colpi di mestolo",
+    "forno": "Torte in forno",
+    "crema": "Crema e meringhe",
+    "oro": "Torta d'oro",
+    "riepilogo": "Riepilogo",
+    "recapNote": "nessuna partecipazione"
+  },
+  "status": {
+    "events": "Eventi",
+    "active": "In corso",
+    "next": "Prossimo",
+    "waiting": "In arrivo",
+    "startsAt": "inizia {when}",
+    "endsAt": "fino a {when}",
+    "starts": "Inizio",
+    "ends": "Fine",
+    "estimatedMark": "≈",
+    "footnote": "Orari nel fuso del tuo dispositivo.",
+    "estimatedNote": "≈ orario di fine stimato, non ancora confermato dal gioco.",
+    "range": "{from} → {to}",
+    "recapUntil": "Riepilogo · fino a {when}",
+    "torteTitle": "Fasi delle Torte",
+    "phaseEnds": "termina tra {t}",
+    "torteStarts": "inizia tra {t}",
+    "torteFirst": "Prima fase: {phase}",
+    "phaseDone": "conclusa",
+    "expand": "Mostra dettagli"
+  },
+  "countdown": {
+    "days": "{d}g {h}:{m}:{s}",
+    "hours": "{h}:{m}:{s}"
+  },
+  "view": {
+    "label": "Vista",
+    "all": "Tutti",
+    "next": "Solo prossimo"
+  },
+  "week": {
+    "title": "Settimana",
+    "intro": "Orari in ora italiana · la linea indica adesso.",
+    "days": [
+      "Lun",
+      "Mar",
+      "Mer",
+      "Gio",
+      "Ven",
+      "Sab",
+      "Dom"
+    ],
+    "range": "{start} → {end}"
+  },
+  "alerts": {
+    "title": "Avvisi nel browser",
+    "limit": "Funzionano solo finché questa pagina è aperta. Per avvisi anche a telefono bloccato usa il calendario qui sotto (iPhone e Android) o il widget Android.",
+    "enable": "Attiva",
+    "granted": "Notifiche attive nel browser.",
+    "denied": "Notifiche bloccate: riattivale dalle impostazioni del sito nel browser.",
+    "unsupported": "Questo browser non supporta le notifiche.",
+    "lead": "Anticipo",
+    "leadOptions": {
+      "0": "all'inizio",
+      "5": "5 min prima",
+      "15": "15 min prima",
+      "30": "30 min prima"
+    },
+    "startTitle": "{icon} {name}",
+    "startBody": "Inizia alle {time}",
+    "startedBody": "È iniziato ora!",
+    "phaseBody": "Fase: {phase} – alle {time}",
+    "ask": "Serve il permesso del browser"
+  },
+  "calendars": {
+    "title": "Calendario del telefono",
+    "intro": "Aggiungi gli eventi al calendario: ti avvisa all'inizio e 15 minuti prima, anche ad app chiusa.",
+    "add": "Aggiungi",
+    "subTitle": "Vuoi che si aggiorni da solo?",
+    "subText": "Puoi collegare il calendario tramite link: se gli orari cambiano si aggiorna da solo (gratis), ma molte app così non fanno suonare i promemoria.",
+    "subIos": "Collega su iPhone",
+    "copyLink": "Copia link per Google Calendar",
+    "copied": "Link copiato: su calendar.google.com → Altri calendari → Da URL, incollalo.",
+    "items": {
+      "tutti": "Tutti gli eventi",
+      "corsa": "Corsa Pazza",
+      "baule": "Baule di Squadra",
+      "torte": "La Sfida Delle Torte"
+    }
+  },
+  "ics": {
+    "calName": "Burraco la Sfida – {name}",
+    "allName": "Burraco la Sfida – eventi",
+    "desc": "Evento settimanale di Burraco Online: La Sfida.",
+    "estimatedDesc": "Orario di fine stimato, non ancora confermato.",
+    "modeDesc": "Modalità: {mode}.",
+    "alarmStart": "{name}: inizia ora",
+    "alarmBefore": "{name}: inizia tra 15 minuti",
+    "source": "Calendario non ufficiale: https://alessio-galbo.github.io/Burraco-la-Sfida/"
+  },
+  "android": {
+    "title": "Widget Android",
+    "intro": "App leggerissima con i soli widget per la schermata Home e le notifiche: si aggiornano anche ad app chiusa.",
+    "download": "Scarica l'APK",
+    "size": "meno di 1 MB",
+    "meta": "APK · {version} · {size} KB",
+    "howTitle": "Installazione",
+    "how1": "Scarica il file APK dal pulsante qui sopra.",
+    "how2": "Aprilo: Android chiederà di consentire l'installazione da fonti sconosciute per il browser o il gestore file. Consentila solo per questa installazione.",
+    "how3": "Tieni premuto sulla schermata Home → Widget → BlS Tracker, e trascina il widget dove vuoi.",
+    "featuresTitle": "Cosa fa",
+    "feat1": "Widget ridimensionabile: si adatta allo spazio che gli dai.",
+    "feat2": "Tre modalità: tutti gli eventi, solo il prossimo, oppure un singolo evento. Puoi mettere più widget insieme.",
+    "feat3": "Notifiche dall'app all'inizio degli eventi e delle fasi, anche a telefono in standby.",
+    "shotsSoon": "Anteprime dei widget in arrivo.",
+    "shots": {
+      "tutti42": "Tutti gli eventi · 4×2 · stile Gioco",
+      "tutti41": "Tutti gli eventi · 4×1 · stile Sistema, icone SVG",
+      "prossimo42": "Prossimo o in corso · 4×2 · stile Gioco",
+      "prossimo22": "Prossimo o in corso · 2×2 · stile Chiaro, icone SVG",
+      "singolo41": "Singolo evento (Corsa Pazza) · 4×1",
+      "singolo11": "Singolo evento (Torte) · 1×1",
+      "app": "L'app: stato, notifiche, stile e anteprime"
+    },
+    "shotsShort": {
+      "tutti42": "Tutti · 4×2",
+      "tutti41": "Tutti · 4×1 · Sistema",
+      "prossimo42": "Prossimo · 4×2",
+      "prossimo22": "Prossimo · 2×2 · Chiaro",
+      "singolo41": "Singolo · 4×1",
+      "singolo11": "Singolo · 1×1",
+      "app": "App"
+    },
+    "viewer": { "prev": "Immagine precedente", "next": "Immagine successiva", "close": "Chiudi", "count": "{n} / {total}", "open": "Apri anteprima: {name}" }
+  },
+  "ios": {
+    "title": "iPhone e iPad",
+    "step1": "Apri questa pagina con Safari.",
+    "step2": "Tocca Condividi (il quadrato con la freccia) → \"Aggiungi alla schermata Home\".",
+    "step3": "Per i promemoria ad app chiusa aggiungi i calendari dalla tab Avvisi: è l'unico modo affidabile su iOS."
+  },
+  "look": {
+    "title": "Aspetto",
+    "theme": "Stile",
+    "themeLabel": "Stile grafico",
+    "themes": { "game": "Gioco", "light": "Chiaro", "system": "Sistema" },
+    "icons": "Icone",
+    "iconsLabel": "Tipo di icone",
+    "iconSet": { "emoji": "Emoji", "svg": "SVG" },
+    "recapBar": "Riepilogo Torte nella barra"
+  },
+  "game": {
+    "title": "Il gioco",
+    "intro": "Burraco Online: La Sfida è sviluppato da WhatWapp. Canali ufficiali:",
+    "site": "Sito ufficiale",
+    "play": "Google Play",
+    "appStore": "App Store"
+  },
+  "share": {
+    "title": "Condividi con il circolo",
+    "text": "Manda il sito agli altri giocatori del tuo circolo.",
+    "message": "Burraco la Sfida: Eventi del Circolo – timer degli eventi settimanali, calendari e widget Android",
+    "subject": "Burraco la Sfida: Eventi del Circolo",
+    "button": "Condividi",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "email": "Email",
+    "copy": "Copia link",
+    "copied": "Link copiato.",
+    "igCopied": "Link copiato: incollalo in un messaggio o nella storia di Instagram.",
+    "qr": "Inquadra il codice per aprire il sito.",
+    "qrAlt": "Codice QR del sito"
+  },
+  "support": {
+    "title": "Supporta il progetto",
+    "text": "Il sito e l'app sono gratuiti e senza pubblicità. Se ti sono utili, puoi offrirmi un caffè.",
+    "button": "Offrimi un caffè su Ko-fi"
+  },
+  "footer": {
+    "disclaimer": "Progetto di fan non ufficiale, non affiliato a WhatWapp. Burraco La Sfida è un marchio dei rispettivi proprietari.",
+    "updated": "Orari aggiornati al {date}.",
+    "source": "Codice sorgente su GitHub",
+    "about": "Informazioni",
+    "timesNote": "Gli eventi si ripetono ogni settimana in ora italiana; il cambio dell'ora legale è gestito."
+  }
+}

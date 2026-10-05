@@ -1,0 +1,45 @@
+{
+  "_doc": "Casi condivisi: gli stessi istanti devono dare lo stesso stato nella PWA (node --test) e in Android (JUnit). Confronta gli istanti, non le stringhe. Inizio incluso, fine esclusa. until = fine evento, startsAt = prossimo inizio, phaseUntil = fine fase.",
+  "cases": [
+    { "name": "lunedi sera (screenshot)", "now": "2026-10-05T20:33:11+02:00", "expect": {
+      "corsa": { "active": true, "until": "2026-10-09T00:00:00+02:00" },
+      "baule": { "active": false, "startsAt": "2026-10-07T02:00:00+02:00" },
+      "torte": { "active": false, "startsAt": "2026-10-09T16:00:00+02:00" } } },
+    { "name": "sabato mattina, torte in forno", "now": "2026-10-10T10:00:00+02:00", "expect": {
+      "corsa": { "active": false, "startsAt": "2026-10-12T12:00:00+02:00" },
+      "baule": { "active": false, "startsAt": "2026-10-14T02:00:00+02:00" },
+      "torte": { "active": true, "until": "2026-10-11T22:00:00+02:00", "phase": "forno", "phaseUntil": "2026-10-10T16:00:00+02:00" } } },
+    { "name": "lunedi 12:30, torte finite (riepilogo escluso)", "now": "2026-10-12T12:30:00+02:00", "expect": {
+      "corsa": { "active": true, "until": "2026-10-16T00:00:00+02:00" },
+      "baule": { "active": false, "startsAt": "2026-10-14T02:00:00+02:00" },
+      "torte": { "active": false, "startsAt": "2026-10-16T16:00:00+02:00" } } },
+    { "name": "fine ora legale (25 ottobre)", "now": "2026-10-25T21:00:00+01:00", "expect": {
+      "corsa": { "active": false, "startsAt": "2026-10-26T12:00:00+01:00" },
+      "baule": { "active": false, "startsAt": "2026-10-28T02:00:00+01:00" },
+      "torte": { "active": true, "until": "2026-10-25T22:00:00+01:00", "phase": "oro", "phaseUntil": "2026-10-25T22:00:00+01:00" } } },
+    { "name": "inizio ora legale (28 marzo)", "now": "2027-03-28T01:00:00+01:00", "expect": {
+      "corsa": { "active": false, "startsAt": "2027-03-29T12:00:00+02:00" },
+      "baule": { "active": false, "startsAt": "2027-03-31T02:00:00+02:00" },
+      "torte": { "active": true, "until": "2027-03-28T22:00:00+02:00", "phase": "oro", "phaseUntil": "2027-03-28T22:00:00+02:00" } } },
+    { "name": "inizio esatto baule", "now": "2026-10-07T02:00:00+02:00", "expect": {
+      "corsa": { "active": true, "until": "2026-10-09T00:00:00+02:00" },
+      "baule": { "active": true, "until": "2026-10-10T02:00:00+02:00" },
+      "torte": { "active": false, "startsAt": "2026-10-09T16:00:00+02:00" } } },
+    { "name": "fine esatta corsa", "now": "2026-10-09T00:00:00+02:00", "expect": {
+      "corsa": { "active": false, "startsAt": "2026-10-12T12:00:00+02:00" },
+      "baule": { "active": true, "until": "2026-10-10T02:00:00+02:00" },
+      "torte": { "active": false, "startsAt": "2026-10-09T16:00:00+02:00" } } },
+    { "name": "inizio torte, baule ancora attivo", "now": "2026-10-09T16:00:00+02:00", "expect": {
+      "corsa": { "active": false, "startsAt": "2026-10-12T12:00:00+02:00" },
+      "baule": { "active": true, "until": "2026-10-10T02:00:00+02:00" },
+      "torte": { "active": true, "until": "2026-10-11T22:00:00+02:00", "phase": "mestolo", "phaseUntil": "2026-10-10T00:00:00+02:00" } } },
+    { "name": "fine esatta baule (sabato 02:00)", "now": "2026-10-10T02:00:00+02:00", "expect": {
+      "corsa": { "active": false, "startsAt": "2026-10-12T12:00:00+02:00" },
+      "baule": { "active": false, "startsAt": "2026-10-14T02:00:00+02:00" },
+      "torte": { "active": true, "until": "2026-10-11T22:00:00+02:00", "phase": "forno", "phaseUntil": "2026-10-10T16:00:00+02:00" } } },
+    { "name": "fine esatta torte (domenica 22:00)", "now": "2026-10-11T22:00:00+02:00", "expect": {
+      "corsa": { "active": false, "startsAt": "2026-10-12T12:00:00+02:00" },
+      "baule": { "active": false, "startsAt": "2026-10-14T02:00:00+02:00" },
+      "torte": { "active": false, "startsAt": "2026-10-16T16:00:00+02:00" } } }
+  ]
+}

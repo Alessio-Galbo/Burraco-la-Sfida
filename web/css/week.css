@@ -1,0 +1,34 @@
+/* Settimana: griglia compatta a 7 colonne, barre sottili 8px nel colore dell'evento, linea "adesso". */
+.week { padding: 12px; }
+.week-head { display: grid; grid-template-columns: repeat(7, 1fr); margin-bottom: 6px; }
+.week-day { font-size: 11px; color: var(--muted); text-align: center; }
+.week-row + .week-row { margin-top: 12px; }
+.week-label { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 5px; font-size: 12px; }
+.week-label span:first-child { font-weight: 600; }
+.week-track {
+  position: relative;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--bg);
+  background-image: repeating-linear-gradient(90deg, transparent 0 calc(100% / 7 - 1px), var(--line) calc(100% / 7 - 1px) calc(100% / 7));
+}
+.week-seg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--from) * 100%);
+  width: calc(var(--len) * 100%);
+  border-radius: 4px;
+}
+.week-seg--ev { background: var(--ev); }
+.week-seg--phase { box-shadow: inset -2px 0 0 var(--bg); }
+.week-now {
+  position: absolute;
+  z-index: 1;
+  top: -3px;
+  bottom: -3px;
+  left: calc(var(--now, 0) * 100%);
+  width: 2px;
+  border-radius: 1px;
+  background: var(--text);
+}

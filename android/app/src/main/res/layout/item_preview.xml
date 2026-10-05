@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Blocco anteprima: etichetta della modalità e widget renderizzati con RemoteViews.apply. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+    android:paddingTop="8dp" android:paddingBottom="8dp">
+    <TextView android:id="@+id/preview_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:textColor="?attr/appTextDim"
+        android:textSize="@dimen/text_m" />
+    <LinearLayout android:id="@+id/preview_box" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/preview_wall"
+        android:orientation="vertical" android:padding="14dp" />
+</LinearLayout>

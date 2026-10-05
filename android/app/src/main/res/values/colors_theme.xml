@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Temi a scelta (docs/design.md "Temi e icone"): l_ = Chiaro; s_ = Sistema, qui il ripiego chiaro sotto Android 12
+     (values-night: Gioco; values-v31 / values-night-v31: colori dinamici del telefono). -->
+<resources>
+    <color name="l_bg">#F6F7FB</color>
+    <color name="l_bg_widget">#EEF6F7FB</color>
+    <color name="l_surface">#FFFFFF</color>
+    <color name="l_surface_2">#E3E7F0</color>
+    <color name="l_line">#1F1A2133</color>
+    <color name="l_text">#1A2133</color>
+    <color name="l_text_dim">#5B6580</color>
+    <color name="l_accent">#B7791F</color>
+    <color name="l_on_accent">#FFFFFF</color>
+    <color name="l_live">#1E9E5A</color>
+    <color name="l_corsa">#3F9A1F</color>
+    <color name="l_baule">#C26A12</color>
+    <color name="l_torte">#D63D84</color>
+    <color name="l_link">#0B5FB0</color>
+
+    <color name="s_bg">@color/l_bg</color>
+    <color name="s_surface">@color/l_surface</color>
+    <color name="s_surface_2">@color/l_surface_2</color>
+    <color name="s_line">@color/l_line</color>
+    <color name="s_text">@color/l_text</color>
+    <color name="s_text_dim">@color/l_text_dim</color>
+    <color name="s_accent">@color/l_accent</color>
+    <color name="s_on_accent">@color/l_on_accent</color>
+    <color name="s_live">@color/l_live</color>
+    <color name="s_corsa">@color/l_corsa</color>
+    <color name="s_baule">@color/l_baule</color>
+    <color name="s_torte">@color/l_torte</color>
+    <color name="s_link">@color/l_link</color>
+</resources>

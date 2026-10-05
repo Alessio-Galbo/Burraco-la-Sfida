@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pulsante di una modalità del widget (bordo oro se è quella attuale). -->
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+    android:background="@drawable/option_bg" android:gravity="start|center_vertical" android:minHeight="40dp"
+    android:paddingStart="16dp" android:paddingEnd="16dp" android:textAllCaps="false"
+    android:textColor="?attr/appText" android:textSize="14sp" />

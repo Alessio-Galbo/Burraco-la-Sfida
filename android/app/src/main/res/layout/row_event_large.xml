@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Riga evento alta (widget "tutti" grande): nome, stato/orario, fase Torte con barra, countdown più grande. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+    android:layout_marginTop="@dimen/row_gap" android:background="@drawable/card_bg"
+    android:gravity="center_vertical" android:orientation="horizontal" android:paddingEnd="12dp">
+    <ImageView android:id="@+id/accent" android:layout_width="3dp" android:layout_height="match_parent"
+        android:layout_marginStart="6dp" android:layout_marginTop="6dp" android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp" android:src="@drawable/accent_bar"
+        android:scaleType="fitXY" android:importantForAccessibility="no" />
+    <TextView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp" android:textSize="@dimen/icon_m" />
+    <ImageView android:id="@+id/icon_img" android:layout_width="@dimen/icon_img_m" android:layout_height="@dimen/icon_img_m" android:layout_marginEnd="8dp"
+        android:importantForAccessibility="no" android:visibility="gone" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:ellipsize="end" android:fontFamily="sans-serif-medium" android:maxLines="1"
+            android:textColor="@color/text" android:textSize="14sp" />
+        <TextView android:id="@+id/dsub" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:drawablePadding="4dp" android:ellipsize="end" android:maxLines="1"
+            android:textColor="@color/text_dim" android:textSize="12sp" />
+        <TextView android:id="@+id/pname" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:ellipsize="end" android:maxLines="1" android:textColor="@color/torte" android:textSize="12sp"
+            android:visibility="gone" />
+        <include layout="@layout/part_segments" />
+        <ProgressBar android:id="@+id/prog" style="@style/Bar" android:layout_width="match_parent"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+    <Chronometer android:id="@+id/chrono" style="@style/AutoCountdown" android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="0.8" android:layout_marginStart="8dp"
+        android:gravity="end|center_vertical" android:autoSizeMaxTextSize="40sp" />
+    <TextView android:id="@+id/when" style="@style/AutoCountdown" android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="0.8" android:layout_marginStart="8dp"
+        android:gravity="end|center_vertical" android:autoSizeMaxTextSize="28sp" android:visibility="gone" />
+</LinearLayout>

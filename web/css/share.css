@@ -1,0 +1,25 @@
+/* Sezione "Condividi" (pulsanti social, QR del sito) e icona di condivisione nella barra in alto. */
+.share { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.share-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; width: 100%; }
+.share-grid .btn { justify-content: center; height: 36px; border-radius: var(--r-row); }
+.share-grid .btn:last-child { grid-column: 1 / -1; }
+@media (min-width: 560px) {
+  .share-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .share-grid .btn:last-child { grid-column: auto; }
+}
+.share-qr { margin: 4px 0 0; }
+.share-qr img { display: block; margin: 0 auto 4px; border-radius: 8px; background: #fff; padding: 6px; }
+.appbar-share {
+  margin-left: auto;
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: #ffffff26;
+  color: #fff;
+  cursor: pointer;
+}
+.appbar-share .ico { margin: 0; width: 18px; height: 18px; }

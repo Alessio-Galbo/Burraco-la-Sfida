@@ -1,0 +1,25 @@
+/* Galleria anteprime della tab Scarica: riquadri tutti uguali 16:10, didascalia breve su una riga, 2-4 colonne. */
+.shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.shot { margin: 0; min-width: 0; }
+.shot img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  padding: 4px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: var(--r-row);
+  background: var(--surface);
+}
+.shot--top img { padding: 0; object-fit: cover; object-position: top; }
+.shot figcaption {
+  margin-top: 4px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-width: 560px) { .shots { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 760px) { .shots { grid-template-columns: repeat(4, minmax(0, 1fr)); } }

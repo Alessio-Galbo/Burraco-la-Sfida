@@ -1,0 +1,40 @@
+/* Temi Chiaro e Sistema (docs/design.md, "Temi e icone"): cambiano solo i colori; Gioco (scuro) è in base.css. */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #eceff6;
+  --line: #1a213317;
+  --line-2: #1a21332e;
+  --text: #1a2133;
+  --muted: #5b6580;
+  --gold: #b7791f;
+  --gold-text: #8a5a00;
+  --live: #1e9e5a;
+  --corsa: #3f9a1f;
+  --baule: #c26a12;
+  --torte: #d63d84;
+  --error: #c62828;
+  --link: #0b6fb8;
+}
+:root[data-theme="system"] { color-scheme: dark light; }
+@media (prefers-color-scheme: light) {
+  :root[data-theme="system"] {
+    color-scheme: light;
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --surface-2: #eceff6;
+    --line: #1a213317;
+    --line-2: #1a21332e;
+    --text: #1a2133;
+    --muted: #5b6580;
+    --gold: #b7791f;
+    --gold-text: #8a5a00;
+    --live: #1e9e5a;
+    --corsa: #3f9a1f;
+    --baule: #c26a12;
+    --torte: #d63d84;
+    --error: #c62828;
+    --link: #0b6fb8;
+  }
+}

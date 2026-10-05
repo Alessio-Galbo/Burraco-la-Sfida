@@ -1,0 +1,116 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Burraco la Sfida//Timer eventi//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Burraco la Sfida – La Sfida Delle Torte
+X-WR-TIMEZONE:Europe/Rome
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VTIMEZONE
+TZID:Europe/Rome
+X-LIC-LOCATION:Europe/Rome
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:torte-mestolo@burraco-la-sfida.alessio-galbo.github.io
+DTSTAMP:20261006T000000Z
+DTSTART;TZID=Europe/Rome:20261009T160000
+DTEND;TZID=Europe/Rome:20261010T000000
+RRULE:FREQ=WEEKLY
+SUMMARY:🎂 Colpi di mestolo (2vs2)
+DESCRIPTION:La Sfida Delle Torte.\nModalità: 2vs2.\nEvento settimanale di 
+ Burraco Online: La Sfida.\nCalendario non ufficiale: https://alessio-galbo
+ .github.io/Burraco-la-Sfida/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Colpi di mestolo (2vs2): inizia ora
+TRIGGER:PT0S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Colpi di mestolo (2vs2): inizia tra 15 minuti
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:torte-forno@burraco-la-sfida.alessio-galbo.github.io
+DTSTAMP:20261006T000000Z
+DTSTART;TZID=Europe/Rome:20261010T000000
+DTEND;TZID=Europe/Rome:20261010T160000
+RRULE:FREQ=WEEKLY
+SUMMARY:🎂 Torte in forno (1vs1)
+DESCRIPTION:La Sfida Delle Torte.\nModalità: 1vs1.\nEvento settimanale di 
+ Burraco Online: La Sfida.\nCalendario non ufficiale: https://alessio-galbo
+ .github.io/Burraco-la-Sfida/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Torte in forno (1vs1): inizia ora
+TRIGGER:PT0S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Torte in forno (1vs1): inizia tra 15 minuti
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:torte-crema@burraco-la-sfida.alessio-galbo.github.io
+DTSTAMP:20261006T000000Z
+DTSTART;TZID=Europe/Rome:20261010T160000
+DTEND;TZID=Europe/Rome:20261011T000000
+RRULE:FREQ=WEEKLY
+SUMMARY:🎂 Crema e meringhe (1vs1)
+DESCRIPTION:La Sfida Delle Torte.\nModalità: 1vs1.\nEvento settimanale di 
+ Burraco Online: La Sfida.\nCalendario non ufficiale: https://alessio-galbo
+ .github.io/Burraco-la-Sfida/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Crema e meringhe (1vs1): inizia ora
+TRIGGER:PT0S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Crema e meringhe (1vs1): inizia tra 15 minuti
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:torte-oro@burraco-la-sfida.alessio-galbo.github.io
+DTSTAMP:20261006T000000Z
+DTSTART;TZID=Europe/Rome:20261011T000000
+DTEND;TZID=Europe/Rome:20261011T220000
+RRULE:FREQ=WEEKLY
+SUMMARY:🎂 Torta d'oro (2vs2)
+DESCRIPTION:La Sfida Delle Torte.\nModalità: 2vs2.\nEvento settimanale di 
+ Burraco Online: La Sfida.\nCalendario non ufficiale: https://alessio-galbo
+ .github.io/Burraco-la-Sfida/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Torta d'oro (2vs2): inizia ora
+TRIGGER:PT0S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Torta d'oro (2vs2): inizia tra 15 minuti
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

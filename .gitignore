@@ -2,3 +2,12 @@
 Screenshot_*.jpg
 burraco_widget_apk_guide.html
 reference/
+3777e28b-1-1200x628.jpg
+88bfde4afe6c5657e39bf28696c1ab80_fgraphic.png
+images.jpg
+
+# Chiave di firma APK (copia specchio di %USERPROFILE%\.bls-tracker): MAI su git
+keys/
+*.jks
+*.keystore
+*.p12

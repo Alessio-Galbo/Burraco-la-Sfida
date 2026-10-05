@@ -1,0 +1,67 @@
+/* Sezioni Avvisi, Scarica e Info: righe con interruttore, calendari, download APK, elenchi (galleria in shots.css). */
+.list > * + *, .list > div > * + * { border-top: 1px solid var(--line); }
+.switch-row, .cal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+.switch {
+  appearance: none;
+  position: relative;
+  flex: none;
+  width: 36px;
+  height: 20px;
+  margin: 0;
+  border-radius: 999px;
+  background: var(--surface-2);
+  box-shadow: inset 0 0 0 1px var(--line-2);
+  cursor: pointer;
+  transition: background .15s;
+}
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--muted);
+  transition: transform .15s;
+}
+.switch:checked { background: var(--gold); box-shadow: none; }
+.switch:checked::after { transform: translateX(16px); background: var(--on-gold); }
+.select {
+  height: 30px;
+  padding: 0 8px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-row);
+  background: var(--bg);
+  color: var(--text);
+  font: 13px var(--font);
+}
+.cal-list { margin: 0; padding: 0; list-style: none; }
+.cal-name { font-size: 13px; font-weight: 600; }
+.cal { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.cal-sub { margin-top: 8px; }
+.cal-sub summary { cursor: pointer; padding: 4px 0; }
+.cal-sub-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.download { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 12px; }
+.pad h3.label { margin: 16px 0 6px; }
+.bullets { margin: 0; padding-left: 18px; font-size: 13px; color: var(--text); }
+.bullets li + li { margin-top: 4px; }
+.bullets li::marker { color: var(--muted); }
+.links { display: flex; flex-wrap: wrap; gap: 6px; }
+.pad .small + .small { margin-top: 6px; }
+.switch-row > span:first-child { flex: 1; min-width: 0; }
+.switch-row .btn, .switch-row .select { flex: none; white-space: nowrap; }
+.links { flex-direction: column; }
+.links .btn { justify-content: flex-start; width: 100%; height: 40px; border-radius: var(--r-row); }
+@media (min-width: 560px) {
+  .links { flex-direction: row; }
+  .links .btn { flex: 1; justify-content: center; }
+}

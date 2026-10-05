@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Configurazione del widget: modalità, stile e icone, anteprima dal vivo e pulsante Salva. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="?attr/appBg" android:clipToPadding="false" android:padding="@dimen/screen_pad">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView style="@style/SectionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="@string/config_title" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/config_hint" android:textColor="?attr/appTextDim" android:textSize="@dimen/text_s" />
+        <LinearLayout android:id="@+id/config_options" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="4dp" android:orientation="vertical" />
+        <TextView style="@style/SectionTitle" android:layout_marginTop="14dp" android:text="@string/config_look" />
+        <include android:id="@+id/config_style" layout="@layout/part_style" />
+        <FrameLayout android:id="@+id/config_preview" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:background="@drawable/preview_wall" android:padding="12dp" />
+        <Button android:id="@+id/config_save" style="@style/GoldButton" android:layout_width="match_parent"
+            android:layout_marginTop="12dp" android:text="@string/config_save" />
+    </LinearLayout>
+</ScrollView>

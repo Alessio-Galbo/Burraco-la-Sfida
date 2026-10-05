@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Barretta di avanzamento 3dp: colore evento applicato come tint (Android 12+), oro prima. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape><solid android:color="@color/surface_2" /><corners android:radius="2dp" /></shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip><shape><solid android:color="@color/gold" /><corners android:radius="2dp" /></shape></clip>
+    </item>
+</layer-list>

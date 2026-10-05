@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Barra fasi Torte (WidgetSegments): traccia, riempimento e riepilogo (tratteggio tenue) sono bitmap bianche tinte con i colori del tema. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/segs" android:layout_width="match_parent" android:layout_height="4dp"
+    android:layout_marginTop="5dp" android:importantForAccessibility="no" android:visibility="gone">
+    <ImageView android:id="@+id/segs_track" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:importantForAccessibility="no" android:scaleType="fitXY" />
+    <ImageView android:id="@+id/segs_fill" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:importantForAccessibility="no" android:scaleType="fitXY" />
+    <ImageView android:id="@+id/segs_recap" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:importantForAccessibility="no" android:scaleType="fitXY" android:visibility="gone" />
+</FrameLayout>
