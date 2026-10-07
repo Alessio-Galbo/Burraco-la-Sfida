@@ -9,7 +9,7 @@ Il lavoro concluso è in [CHANGELOG.md](CHANGELOG.md) (tecnico) e [NOVITA.md](NO
 ## Prossimi
 
 ## In attesa
-- [ ] Conferma sul telefono: con la v1.0.1 installata arriva la notifica «Nuova versione v1.0.2 disponibile» (entro un giorno, o subito aprendo l'app) — attende: test dell'utente
+- [ ] Conferma sul telefono della v1.0.2 (da installare a mano dal sito: la v1.0.1 mostra solo il banner, ogni 12 h): «Controlla aggiornamenti» risponde «Hai l'ultima versione»; la notifica arriverà dalla prossima release — attende: test dell'utente
 - [ ] Conferma sul sito: «Attiva» sparisce da solo dopo aver consentito le notifiche dalle impostazioni del browser (ricarica una volta la pagina per prendere la versione nuova) — attende: test dell'utente
 - [ ] Conferma sul telefono della v1.0.1: countdown mai negativo al cambio evento, ordine (in corso → fine più vicina), orari aggiornati — attende: test dell'utente
 - [ ] Conferma sul sito: guida al calendario dedicato, messaggio quando il browser non mostra la richiesta notifiche — attende: test dell'utente
