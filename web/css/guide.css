@@ -65,3 +65,4 @@
   .links { flex-direction: row; }
   .links .btn { flex: 1; justify-content: center; }
 }
+.cal-tip { margin: 0 0 8px; padding: 8px 10px; border-radius: var(--r-row); background: var(--surface); border-left: 3px solid var(--gold); }

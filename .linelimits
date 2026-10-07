@@ -3,3 +3,5 @@
 limit = 100
 warn = 90
 include = *.js *.mjs *.css *.html *.kt *.kts *.py
+# Mockup di riferimento locale (escluso da git, non è codice del progetto).
+exclude = /burraco_widget_apk_guide.html

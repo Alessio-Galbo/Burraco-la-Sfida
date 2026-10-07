@@ -1,8 +1,8 @@
-// Righe evento compatte ed espandibili: icona, nome, sottoriga, stato e countdown; in corso in alto.
+// Righe evento compatte ed espandibili: icona, nome, sottoriga, stato e countdown; in corso (fine più vicina) in alto.
 import { clone, fields, setText } from "../core/dom.js";
 import { t, applyI18n } from "../core/i18n.js";
 import { countdown, when, short, approx, phaseLabel } from "../core/format.js";
-import { nextUp } from "../schedule/index.js";
+import { nextUp, ordered as orderOf } from "../schedule/index.js";
 import { renderPhaseList } from "./phaselist.js";
 import { eventIcon } from "./evicon.js";
 
@@ -34,7 +34,7 @@ function subLine(s) {
 /** Aggiorna testi e ordine (in corso prima, poi per inizio); visible = id da mostrare. */
 export function updateRows(container, statuses, now, visible) {
   const next = nextUp(statuses);
-  const ordered = [...statuses].sort((a, b) => (b.active - a.active) || (a.start - b.start));
+  const ordered = orderOf(statuses);
   const order = ordered.map((s) => s.id).join();
   if (container.dataset.order !== order) {
     for (const s of ordered) container.append(rows.get(s.id).el);

@@ -1,7 +1,24 @@
 # Avanzamento
 
 ## Ora
-- [ ] (niente in corso)
+- [ ] Widget: niente countdown negativo all'inizio/fine evento (sveglie esatte al cambio di stato)
+- [ ] Ordine unico sito + widget: in corso per fine più vicina, poi in attesa per inizio più vicino (scelta utente 2026-10-07)
+- [ ] Calendari: guida al calendario dedicato (on/off e rimozione in un tocco)
+- [ ] Release v1.0.1
+- [x] [approvato per l'AI] Make the check Burraco la Sfida / limiti-righe pass
+  - Prova: `burraco_widget_apk_guide.html` (mockup locale, ignorato da git) escluso in `.linelimits`;
+    `check_line_limits.py --root .` → "104 file controllati: 0 oltre 100 righe, 1 in avviso", exit 0
+  - Nota dell'utente: Choice: Diagnose and fix
+  - Problem: OVER 666 burraco_widget_apk_guide.html
+  - Hint: Run again with: hub check-project "Burraco la Sfida" limiti-righe
+  - Log: — (last lines)
+  - `OVER 666 burraco_widget_apk_guide.html`
+- [x] [approvato per l'AI] Fix the maps: Maps of Burraco la Sfida need fixing
+  - Prova: parte manuale di AGENTS.md accorciata (tolti 3 righe vuote e 2 duplicati: server, limiti righe);
+    `wc -l AGENTS.md` → 58 righe (≤ 60), blocco `hub:map` invariato. `hub check-project` non eseguibile in automatico (permesso negato)
+  - Nota dell'utente: Choice: Diagnose and fix
+  - Problem: AGENTS.md: 64 righe > 60
+  - Hint: A map error the generator cannot fix by itself: it needs a manual fix (e.g. shorten the manual part of AGENTS.md).
 
 ## Prossimi
 
