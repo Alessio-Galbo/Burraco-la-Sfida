@@ -3,6 +3,11 @@
 Modifiche tecniche di BlS Tracker (sito + app Android). Le novità per gli utenti sono in [NOVITA.md](NOVITA.md).
 Versioni dell'app = tag `vX.Y.Z` (release su GitHub); il sito si aggiorna a ogni push su `main`.
 
+## [Non rilasciato]
+### Sito
+- Versione dell'APK nella pagina Scarica: la cache dura al massimo 10 minuti invece dell'intera scheda
+  (ricaricando la pagina si vedeva ancora la versione precedente).
+
 ## [1.0.2] – 2026-10-07
 ### App Android
 - Avviso nuova versione come notifica di sistema (canale "Aggiornamenti app", una sola volta per versione; tocco →

@@ -1,5 +1,5 @@
 // Service worker: app shell in cache (offline), rete-prima per orari e calendari, apertura della pagina dagli avvisi.
-const CACHE = "burraco-shell-v23";
+const CACHE = "burraco-shell-v24";
 const SHELL = [
   "./", "index.html", "partials/templates.html", "partials/guide.html", "partials/info.html", "locales/it.json", "data/schedule.json",
   "css/base.css", "css/shell.css", "css/events.css", "css/span.css", "css/torte.css", "css/week.css", "css/guide.css", "css/icons.css", "css/viewer.css", "css/share.css",
