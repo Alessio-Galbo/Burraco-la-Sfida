@@ -1,7 +1,6 @@
 # Avanzamento
 
 ## Ora
-- [ ] Release v1.0.1 (tag → GitHub Actions)
 - [x] [approvato per l'AI] Make the check Burraco la Sfida / limiti-righe pass
   - Prova: `burraco_widget_apk_guide.html` (mockup locale, ignorato da git) escluso in `.linelimits`;
     `check_line_limits.py --root .` → "104 file controllati: 0 oltre 100 righe, 1 in avviso", exit 0
@@ -42,3 +41,4 @@
 - [x] PWA: titolo "Burraco la Sfida: Eventi del Circolo", layout mobile senza scroll orizzontale (verificato a 360/412px)
 - [x] Workflow Pages (`.github/workflows/pages.yml`)
 - [x] Prova su telefono reale della v1.0.0: tutto ok (confermato dall'utente 2026-10-06)
+- [x] Release v1.0.1 pubblicata da GitHub Actions; APK scaricato dalla release con firma verificata (versionCode 10001, SHA-256 db29…67e6)
