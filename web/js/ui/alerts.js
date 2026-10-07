@@ -45,4 +45,14 @@ export function initAlerts(schedule) {
     if (supported() && Notification.permission === "default") $("#notify-state").textContent = t("alerts.noPrompt");
   });
   showState();
+  watchPermission();
+}
+
+/** Il permesso può cambiare dalle impostazioni del browser: aggiorna lo stato senza ricaricare la pagina. */
+function watchPermission() {
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) showState(); });
+  window.addEventListener("focus", showState);
+  navigator.permissions?.query({ name: "notifications" })
+    .then((status) => { status.onchange = showState; })
+    .catch(() => { /* API non disponibile: bastano visibilitychange e focus */ });
 }

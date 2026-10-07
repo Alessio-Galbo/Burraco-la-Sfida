@@ -3,6 +3,11 @@
 Modifiche tecniche di BlS Tracker (sito + app Android). Le novità per gli utenti sono in [NOVITA.md](NOVITA.md).
 Versioni dell'app = tag `vX.Y.Z` (release su GitHub); il sito si aggiorna a ogni push su `main`.
 
+## [Non rilasciato]
+### Sito
+- Avvisi nel browser: lo stato del permesso si aggiorna da solo quando cambia dalle impostazioni del browser
+  (`navigator.permissions` onchange, `visibilitychange`, `focus`): «Attiva» sparisce senza ricaricare.
+
 ## [1.0.1] – 2026-10-07
 ### App Android
 - Sveglie esatte (`setExactAndAllowWhileIdle`, 1 s dopo ogni inizio/fine/cambio fase) per widget e notifiche:
