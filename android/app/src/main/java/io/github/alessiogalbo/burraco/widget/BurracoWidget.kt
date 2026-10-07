@@ -7,7 +7,7 @@ import android.content.ComponentName
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
-import io.github.alessiogalbo.burraco.net.ScheduleSync
+import io.github.alessiogalbo.burraco.net.DailyReceiver
 import io.github.alessiogalbo.burraco.ui.GameLauncher
 import java.time.Instant
 
@@ -15,9 +15,9 @@ class BurracoWidget : AppWidgetProvider() {
     override fun onUpdate(context: Context, manager: AppWidgetManager, ids: IntArray) {
         ids.forEach { update(context, manager, it) }
         WidgetScheduler.scheduleNext(context)
-        // Aggiornamento periodico: orari dal sito al massimo ogni 24 h, il ricevitore resta vivo fino alla fine.
+        // Aggiornamento periodico: orari dal sito e nuova versione al massimo ogni 24 h; il ricevitore resta vivo fino alla fine.
         val pending = goAsync()
-        if (!ScheduleSync.maybeRun(context) { pending.finish() }) pending.finish()
+        DailyReceiver.runDue(context) { pending.finish() }
     }
 
     override fun onAppWidgetOptionsChanged(context: Context, manager: AppWidgetManager, id: Int, options: Bundle) {

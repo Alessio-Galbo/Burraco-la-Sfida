@@ -38,6 +38,7 @@
 
         <receiver android:name=".notify.NotifyReceiver" android:exported="false" />
         <receiver android:name=".widget.PinReceiver" android:exported="false" />
+        <receiver android:name=".net.DailyReceiver" android:exported="false" />
 
         <receiver android:name=".SystemEvents" android:exported="true">
             <intent-filter>

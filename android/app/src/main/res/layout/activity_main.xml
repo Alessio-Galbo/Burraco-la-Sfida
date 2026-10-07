@@ -77,6 +77,12 @@
                     android:drawablePadding="8dp" android:paddingStart="14dp" android:paddingEnd="16dp"
                     android:stateListAnimator="@null" android:text="@string/kofi" android:textAllCaps="false"
                     android:textColor="#FFFFFF" android:textSize="13sp" />
+                <TextView android:id="@+id/version_installed" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="20dp" android:gravity="center"
+                    android:textColor="?attr/appText" android:textSize="@dimen/text_m" />
+                <Button android:id="@+id/check_update" style="@style/OutlineButton" android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal" android:layout_marginTop="8dp"
+                    android:paddingStart="16dp" android:paddingEnd="16dp" android:text="@string/update_check" />
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:layout_marginTop="20dp" android:gravity="center" android:text="@string/disclaimer"
                     android:textColor="?attr/appTextDim" android:textSize="@dimen/text_s" />

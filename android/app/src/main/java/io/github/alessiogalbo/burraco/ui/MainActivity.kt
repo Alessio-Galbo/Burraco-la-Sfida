@@ -1,4 +1,4 @@
-// Schermata principale: banner nuova versione, stato attuale, apri gioco, notifiche, aggiungi widget, anteprima, link e avviso fan.
+// Schermata principale: banner e controllo nuova versione, stato attuale, apri gioco, notifiche, aggiungi widget, anteprima, link e avviso fan.
 package io.github.alessiogalbo.burraco.ui
 
 import android.app.Activity
@@ -44,7 +44,7 @@ class MainActivity : Activity() {
             R.id.link_appstore to R.string.appstore_url, R.id.link_pwa to R.string.pwa_url, R.id.kofi to R.string.kofi_url,
         ).forEach { (id, url) -> findViewById<View>(id).setOnClickListener { GameLauncher.openUrl(this, getString(url)) } }
         NotifyScheduler.reschedule(this)
-        UpdateBanner(this).bind()
+        UpdateSection(this, UpdateBanner(this).also { it.bind() }).bind()
         // Orari dal sito (max 1 volta ogni 24 h, in background): se cambiano, ridisegna stato e anteprime.
         ScheduleSync.maybeRun(this) { changed -> if (changed) runOnUiThread { if (!isDestroyed) refresh() } }
     }

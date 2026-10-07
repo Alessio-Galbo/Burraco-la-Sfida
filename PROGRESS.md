@@ -5,12 +5,12 @@ Il lavoro concluso è in [CHANGELOG.md](CHANGELOG.md) (tecnico) e [NOVITA.md](NO
 ## Risposte e domande per te
 
 ## Ora
-- [ ] App: avviso nuova versione come notifica di sistema (una volta per versione), controllo anche in background e a ogni apertura (max 1/h), pulsante «Controlla aggiornamenti» con versione installata — IN LAVORAZIONE: Claude (agente Android) dal 2026-10-07
-- [ ] Release v1.0.2
+- [ ] Release v1.0.2 (tag → GitHub Actions, verifica firma) — IN LAVORAZIONE: Claude (sessione principale) dal 2026-10-07
 
 ## Prossimi
 
 ## In attesa
+- [ ] Conferma sul telefono: con la v1.0.1 installata arriva la notifica «Nuova versione v1.0.2 disponibile» (entro un giorno, o subito aprendo l'app) — attende: test dell'utente
 - [ ] Conferma sul sito: «Attiva» sparisce da solo dopo aver consentito le notifiche dalle impostazioni del browser (ricarica una volta la pagina per prendere la versione nuova) — attende: test dell'utente
 - [ ] Conferma sul telefono della v1.0.1: countdown mai negativo al cambio evento, ordine (in corso → fine più vicina), orari aggiornati — attende: test dell'utente
 - [ ] Conferma sul sito: guida al calendario dedicato, messaggio quando il browser non mostra la richiesta notifiche — attende: test dell'utente

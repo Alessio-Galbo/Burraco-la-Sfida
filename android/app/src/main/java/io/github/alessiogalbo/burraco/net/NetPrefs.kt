@@ -1,4 +1,4 @@
-// Promemoria delle funzioni di rete in SharedPreferences: ultimi tentativi ed esito, validatori ETag degli orari, ultima versione vista, versione ignorata.
+// Promemoria delle funzioni di rete in SharedPreferences: ultimi tentativi ed esito, validatori ETag degli orari, ultima versione vista, ignorata e notificata.
 package io.github.alessiogalbo.burraco.net
 
 import android.content.Context
@@ -11,6 +11,7 @@ object NetPrefs {
     const val UPDATE_AT = "update_at"
     const val LATEST = "latest_tag"
     const val DISMISSED = "dismissed_tag"
+    const val NOTIFIED = "notified_tag"
 
     private fun prefs(c: Context) = c.getSharedPreferences(FILE, Context.MODE_PRIVATE)
 
@@ -22,6 +23,11 @@ object NetPrefs {
         p.edit().putLong(key, now).putBoolean("${key}_ok", false).apply()
         return true
     }
+
+    /** Segna un tentativo [key] fatto adesso (controllo manuale, che ignora gli intervalli). */
+    @Synchronized
+    fun mark(c: Context, key: String, now: Long = System.currentTimeMillis()) =
+        prefs(c).edit().putLong(key, now).putBoolean("${key}_ok", false).apply()
 
     /** Esito del tentativo [key]: solo un successo fa valere l'intervallo lungo. */
     fun result(c: Context, key: String, ok: Boolean) = prefs(c).edit().putBoolean("${key}_ok", ok).apply()

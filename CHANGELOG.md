@@ -3,7 +3,12 @@
 Modifiche tecniche di BlS Tracker (sito + app Android). Le novità per gli utenti sono in [NOVITA.md](NOVITA.md).
 Versioni dell'app = tag `vX.Y.Z` (release su GitHub); il sito si aggiorna a ogni push su `main`.
 
-## [Non rilasciato]
+## [1.0.2] – 2026-10-07
+### App Android
+- Avviso nuova versione come notifica di sistema (canale "Aggiornamenti app", una sola volta per versione; tocco →
+  download dell'APK), oltre al banner. Controllo all'apertura (max 1/h) e in background una volta al giorno
+  (`net/DailyReceiver.kt`, riprogrammato a riavvio, cambio ora/fuso, aggiornamento app); regole in `net/UpdatePolicy.kt`.
+- Pulsante «Controlla aggiornamenti» con la versione installata (`ui/UpdateSection.kt`). Test `UpdatePolicyTest`.
 ### Sito
 - Avvisi nel browser: lo stato del permesso si aggiorna da solo quando cambia dalle impostazioni del browser
   (`navigator.permissions` onchange, `visibilitychange`, `focus`): «Attiva» sparisce senza ricaricare.

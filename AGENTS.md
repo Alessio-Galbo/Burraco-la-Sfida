@@ -49,8 +49,8 @@ e **app Android leggerissima** con solo i widget per la Home. Repo: https://gith
 ## Skill attive
 - per tag: android-appwidget-fluid, android-cli, android-release-signing, app-icon-generation, headless-chrome-cdp, modern-web-guidance, pwa-service-worker-checklist, recurring-weekly-schedule, web-share-social-preview
 ## Dati
-- [android/](android/): 134 file — 6 file .kts/.properties, nome = nomi vari (es. build.gradle.kts); app/src/main/res/drawable/: 32 file .xml, nome = nomi vari (es. accent_bar.xml); app/src/main/res/layout/: 26 file .xml, nome = nomi vari (es. activity_config.xml); app/src/main/java/io/github/alessiogalbo/burraco/widget/: 14 file .kt, nome = nomi vari (es. BurracoWidget.kt); … e altre 19 cartelle, ultimo 2026-10-07
-- [reference/](reference/): 311 file — review/shots/: 257 file .txt/.png, nome = nomi vari (es. all_140x140.png.txt); review/: 54 file .png, nome = nomi vari (es. app-footer-game.png), ultimo 2026-10-07
+- [android/](android/): 139 file — 6 file .kts/.properties, nome = nomi vari (es. build.gradle.kts); app/src/main/res/drawable/: 32 file .xml, nome = nomi vari (es. accent_bar.xml); app/src/main/res/layout/: 26 file .xml, nome = nomi vari (es. activity_config.xml); app/src/main/java/io/github/alessiogalbo/burraco/widget/: 14 file .kt, nome = nomi vari (es. BurracoWidget.kt); … e altre 19 cartelle, ultimo 2026-10-07
+- [reference/](reference/): 313 file — review/shots/: 257 file .txt/.png, nome = nomi vari (es. all_140x140.png.txt); review/: 56 file .png, nome = nomi vari (es. app-footer-game.png), ultimo 2026-10-07
 - [web/img/](web/img/): 27 file — qr-site.svg; icons/: 18 file .svg/.md, nome = nomi vari (es. android.svg); widgets/: 8 file .png/.json, nome = nomi vari (es. app.png), ultimo 2026-10-06
 ## Non qui
 - `.agents/`, `.claude/`, `.github/`: config dei tool AI

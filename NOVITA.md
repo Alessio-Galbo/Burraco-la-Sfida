@@ -1,5 +1,10 @@
 # Novità
 
+## Versione 1.0.2 – 7 ottobre 2026
+- **Avviso di aggiornamento:** quando esce una nuova versione dell'app arriva una notifica; toccala per scaricarla.
+  Nell'app trovi anche «Controlla aggiornamenti» e la versione che hai installato.
+- **Notifiche del sito:** dopo averle consentite dalle impostazioni del browser, il pulsante «Attiva» sparisce da solo.
+
 ## Versione 1.0.1 – 7 ottobre 2026
 - **Widget più preciso:** quando un evento inizia o finisce il widget si aggiorna subito, senza più numeri in negativo.
 - **Ordine più chiaro:** in alto l'evento in corso che finisce prima, poi quelli in arrivo. Uguale su sito e widget.

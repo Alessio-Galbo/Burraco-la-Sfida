@@ -94,6 +94,13 @@
     <string name="update_download">Scarica</string>
     <string name="update_later">Più tardi</string>
     <string name="update_url">https://github.com/Alessio-Galbo/Burraco-la-Sfida/releases/latest/download/burraco-widget.apk</string>
+    <string name="update_check">Controlla aggiornamenti</string>
+    <string name="version_installed_fmt">Versione installata: %1$s</string>
+    <string name="update_latest">Hai l\'ultima versione</string>
+    <string name="update_failed">Impossibile controllare, riprova più tardi</string>
+    <string name="update_notif_text">Tocca per scaricare l\'aggiornamento di BlS Tracker</string>
+    <string name="update_channel_name">Aggiornamenti app</string>
+    <string name="update_channel_desc">Avviso quando è disponibile una nuova versione dell\'app</string>
     <string name="privacy_net">L\'app si collega solo a GitHub per gli orari aggiornati e per sapere se c\'è una nuova versione. Nessun dato personale inviato.</string>
 
     <string name="channel_name">Eventi del gioco</string>
