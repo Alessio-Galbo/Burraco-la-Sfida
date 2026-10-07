@@ -9,6 +9,8 @@ Timer degli eventi settimanali del circolo in **Burraco Online: La Sfida**: sito
 **🌐 Sito:** https://alessio-galbo.github.io/Burraco-la-Sfida/
 **📱 App Android (APK):** [scarica l'ultima versione](https://github.com/Alessio-Galbo/Burraco-la-Sfida/releases/latest/download/burraco-widget.apk) · [tutte le versioni](https://github.com/Alessio-Galbo/Burraco-la-Sfida/releases)
 
+**📰 Novità:** [NOVITA.md](NOVITA.md) · [changelog tecnico](CHANGELOG.md)
+
 ## Eventi e orari (ora italiana)
 
 | Evento | Inizio | Fine |
