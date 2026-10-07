@@ -41,6 +41,8 @@ export function initAlerts(schedule) {
   $("#notify-enable").addEventListener("click", async () => {
     if (supported()) await Notification.requestPermission();
     showState();
+    // Richiesta non mostrata (prompt silenziato da Chrome, browser interni delle app): spiega cosa fare.
+    if (supported() && Notification.permission === "default") $("#notify-state").textContent = t("alerts.noPrompt");
   });
   showState();
 }

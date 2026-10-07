@@ -1,10 +1,7 @@
 # Avanzamento
 
 ## Ora
-- [ ] Widget: niente countdown negativo all'inizio/fine evento (sveglie esatte al cambio di stato)
-- [ ] Ordine unico sito + widget: in corso per fine più vicina, poi in attesa per inizio più vicino (scelta utente 2026-10-07)
-- [ ] Calendari: guida al calendario dedicato (on/off e rimozione in un tocco)
-- [ ] Release v1.0.1
+- [ ] Release v1.0.1 (tag → GitHub Actions)
 - [x] [approvato per l'AI] Make the check Burraco la Sfida / limiti-righe pass
   - Prova: `burraco_widget_apk_guide.html` (mockup locale, ignorato da git) escluso in `.linelimits`;
     `check_line_limits.py --root .` → "104 file controllati: 0 oltre 100 righe, 1 in avviso", exit 0
@@ -21,6 +18,8 @@
   - Hint: A map error the generator cannot fix by itself: it needs a manual fix (e.g. shorten the manual part of AGENTS.md).
 
 ## Prossimi
+- [ ] Da confermare sul telefono (v1.0.1): countdown mai negativo al cambio evento (sveglie esatte), ordine in corso→fine più vicina, orari con ETag
+- [ ] Da confermare sul sito: guida calendario dedicato, messaggio quando il browser non mostra la richiesta notifiche
 
 ## In attesa (utente)
 

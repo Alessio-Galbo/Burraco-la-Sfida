@@ -6,6 +6,7 @@ import android.content.Context
 import android.os.Build
 import android.widget.RemoteViews
 import io.github.alessiogalbo.burraco.R
+import io.github.alessiogalbo.burraco.schedule.EventOrder
 import io.github.alessiogalbo.burraco.schedule.EventStatus
 import io.github.alessiogalbo.burraco.schedule.ScheduleRepo
 import java.time.Instant
@@ -14,7 +15,7 @@ object WidgetViews {
     /** Evento da mostrare per "prossimo o in corso" o "singolo". */
     fun pick(all: List<EventStatus>, mode: WidgetMode): EventStatus = when (mode.kind) {
         WidgetMode.Kind.SINGLE -> all.firstOrNull { it.event.id == mode.eventId } ?: all.first()
-        else -> all.filter { it.active }.minByOrNull { it.until!! } ?: all.minBy { it.startsAt!! }
+        else -> EventOrder.first(all)
     }
 
     private fun singleLayout(size: WidgetSize) = when (size) {
@@ -35,10 +36,6 @@ object WidgetViews {
         else -> R.layout.widget_rows to R.layout.row_event_large
     }
 
-    /** Ordine di "tutti": in corso per fine più vicina, poi in attesa per inizio più vicino. */
-    fun ordered(all: List<EventStatus>): List<EventStatus> =
-        all.filter { it.active }.sortedBy { it.until } + all.filter { !it.active }.sortedBy { it.startsAt }
-
     fun build(
         c: Context, mode: WidgetMode, size: WidgetSize, now: Instant, click: PendingIntent?, st: WidgetStyle,
     ): RemoteViews {
@@ -55,7 +52,7 @@ object WidgetViews {
         val (root, row) = allLayouts(size)
         val rv = RemoteViews(c.packageName, root)
         rv.removeAllViews(R.id.rows)
-        ordered(all).forEach { s -> rv.addView(R.id.rows, RemoteViews(c.packageName, row).also { WidgetBind.bind(c, it, s, now, st) }) }
+        EventOrder.ordered(all).forEach { s -> rv.addView(R.id.rows, RemoteViews(c.packageName, row).also { WidgetBind.bind(c, it, s, now, st) }) }
         return rv
     }
 

@@ -1,10 +1,10 @@
-// Programma con AlarmManager (inesatto, consentito in idle) il prossimo avviso; lo cancella se nulla è attivo.
+// Programma con sveglia esatta (Alarms, ricade su inesatta se non consentita) il prossimo avviso; la cancella se nulla è attivo.
 package io.github.alessiogalbo.burraco.notify
 
-import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import io.github.alessiogalbo.burraco.Alarms
 import io.github.alessiogalbo.burraco.schedule.ScheduleRepo
 import java.time.Duration
 import java.time.Instant
@@ -27,13 +27,8 @@ object NotifyScheduler {
 
     /** Riprogramma dal momento [after] (default adesso). */
     fun reschedule(c: Context, after: Instant = Instant.now()) {
-        val am = c.getSystemService(AlarmManager::class.java)
-        val next = planner(c).next(after)
-        if (next == null) {
-            am.cancel(pending(c, 0))
-            return
-        }
+        val next = planner(c).next(after) ?: return Alarms.cancel(c, pending(c, 0))
         val at = next.first.toEpochMilli()
-        am.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, at, pending(c, at))
+        Alarms.set(c, at, pending(c, at))
     }
 }

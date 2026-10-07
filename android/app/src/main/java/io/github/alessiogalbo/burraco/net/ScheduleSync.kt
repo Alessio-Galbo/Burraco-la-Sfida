@@ -1,4 +1,4 @@
-// Orari aggiornati dal sito (max 1 volta ogni 24 h, in background): valida, salva in filesDir, aggiorna widget e notifiche.
+// Orari aggiornati dal sito (max 1 volta ogni 24 h, in background, richiesta condizionale ETag): valida, salva, aggiorna widget e notifiche.
 package io.github.alessiogalbo.burraco.net
 
 import android.content.Context
@@ -26,15 +26,18 @@ object ScheduleSync {
         return true
     }
 
-    /** Vero se gli orari in uso cambiano, falso se già aggiornati, null se il tentativo è fallito (riprova tra 2 h). */
+    /** Vero se gli orari in uso cambiano, falso se già aggiornati (anche 304), null se il tentativo è fallito (riprova tra 2 h). */
     private fun fetch(c: Context): Boolean? {
-        val body = Http.get(URL) ?: return null
-        ScheduleCheck.parseValid(body) ?: return null
         val file = ScheduleRepo.downloaded(c)
-        if (file.exists() && file.readText(Charsets.UTF_8) == body) return false
-        val tmp = java.io.File(file.parentFile, file.name + ".tmp")
-        tmp.writeText(body, Charsets.UTF_8)
-        if (!tmp.renameTo(file)) return null.also { tmp.delete() }
+        val v = Conditional.Validators(NetPrefs.string(c, NetPrefs.SCHEDULE_ETAG), NetPrefs.string(c, NetPrefs.SCHEDULE_MODIFIED))
+        val r = Http.request(URL, headers = Conditional.headers(v, file.exists()))
+        val outcome = Conditional.apply(r, file) { ScheduleCheck.parseValid(it) != null }
+        if (outcome == Conditional.Outcome.FAILED) return null
+        if (outcome != Conditional.Outcome.NOT_MODIFIED && r != null) {
+            NetPrefs.setString(c, NetPrefs.SCHEDULE_ETAG, r.etag)
+            NetPrefs.setString(c, NetPrefs.SCHEDULE_MODIFIED, r.lastModified)
+        }
+        if (outcome != Conditional.Outcome.WRITTEN) return false
         val before = ScheduleRepo.schedule(c)
         ScheduleRepo.reset()
         if (ScheduleRepo.schedule(c) == before) return false

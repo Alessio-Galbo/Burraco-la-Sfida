@@ -22,6 +22,7 @@ class BurracoWidget : AppWidgetProvider() {
 
     override fun onAppWidgetOptionsChanged(context: Context, manager: AppWidgetManager, id: Int, options: Bundle) {
         update(context, manager, id)
+        WidgetScheduler.scheduleNext(context)
     }
 
     override fun onDeleted(context: Context, ids: IntArray) = WidgetPrefs.remove(context, ids)

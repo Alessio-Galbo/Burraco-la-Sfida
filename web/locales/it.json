@@ -88,7 +88,8 @@
     "enable": "Attiva",
     "granted": "Notifiche attive nel browser.",
     "denied": "Notifiche bloccate: riattivale dalle impostazioni del sito nel browser.",
-    "unsupported": "Questo browser non supporta le notifiche.",
+    "unsupported": "Questo browser non supporta le notifiche (su iPhone funzionano solo con il sito aggiunto alla schermata Home).",
+    "noPrompt": "Il browser non ha mostrato la richiesta: tocca il lucchetto o la campanella accanto all'indirizzo → Notifiche → Consenti. Se hai aperto il sito da WhatsApp o Instagram, aprilo prima in Chrome.",
     "lead": "Anticipo",
     "leadOptions": {
       "0": "all'inizio",

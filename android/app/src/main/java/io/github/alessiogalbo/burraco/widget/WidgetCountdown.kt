@@ -11,20 +11,15 @@ import java.time.Duration
 import java.time.Instant
 
 object WidgetCountdown {
-    /** Sotto questa soglia il countdown è un Chronometer live; sopra "2g 3h" (aggiornato ogni ora). */
-    val LIVE_LIMIT: Duration = Duration.ofHours(24)
-
-    /** Bersaglio del countdown: fine evento se attivo, altrimenti inizio. */
-    fun target(s: EventStatus): Instant = if (s.active) s.until!! else s.startsAt!!
-
     fun bind(c: Context, rv: RemoteViews, s: EventStatus, now: Instant, st: WidgetStyle) {
-        val left = Duration.between(now, target(s))
-        val live = left < LIVE_LIMIT
+        // Lo stato è calcolato su [now]: il bersaglio è sempre nel futuro, il base del Chronometer mai nel passato.
+        val left = Duration.between(now, RefreshPlan.target(s)).coerceAtLeast(Duration.ZERO)
+        val live = left < RefreshPlan.LIVE_LIMIT
         rv.setViewVisibility(R.id.chrono, if (live) View.VISIBLE else View.GONE)
         rv.setViewVisibility(R.id.`when`, if (live) View.GONE else View.VISIBLE)
         WidgetPaint.countdown(c, rv, s, st)
         if (live) {
-            val base = SystemClock.elapsedRealtime() + left.toMillis().coerceAtLeast(0)
+            val base = SystemClock.elapsedRealtime() + left.toMillis()
             rv.setChronometer(R.id.chrono, base, c.getString(R.string.chrono_format), true)
             rv.setChronometerCountDown(R.id.chrono, true)
         } else {

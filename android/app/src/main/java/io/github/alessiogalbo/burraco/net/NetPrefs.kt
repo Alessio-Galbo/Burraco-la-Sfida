@@ -1,4 +1,4 @@
-// Promemoria delle funzioni di rete in SharedPreferences: ultimi tentativi ed esito, ultima versione vista, versione ignorata.
+// Promemoria delle funzioni di rete in SharedPreferences: ultimi tentativi ed esito, validatori ETag degli orari, ultima versione vista, versione ignorata.
 package io.github.alessiogalbo.burraco.net
 
 import android.content.Context
@@ -6,6 +6,8 @@ import android.content.Context
 object NetPrefs {
     private const val FILE = "net"
     const val SCHEDULE_AT = "schedule_at"
+    const val SCHEDULE_ETAG = "schedule_etag"
+    const val SCHEDULE_MODIFIED = "schedule_modified"
     const val UPDATE_AT = "update_at"
     const val LATEST = "latest_tag"
     const val DISMISSED = "dismissed_tag"

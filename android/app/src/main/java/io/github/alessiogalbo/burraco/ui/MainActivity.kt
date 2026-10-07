@@ -12,13 +12,13 @@ import android.widget.Toast
 import io.github.alessiogalbo.burraco.R
 import io.github.alessiogalbo.burraco.net.ScheduleSync
 import io.github.alessiogalbo.burraco.notify.NotifyScheduler
+import io.github.alessiogalbo.burraco.schedule.EventOrder
 import io.github.alessiogalbo.burraco.schedule.ScheduleRepo
 import io.github.alessiogalbo.burraco.widget.BurracoWidget
 import io.github.alessiogalbo.burraco.widget.PinReceiver
 import io.github.alessiogalbo.burraco.widget.WidgetBind
 import io.github.alessiogalbo.burraco.widget.WidgetPrefs
 import io.github.alessiogalbo.burraco.widget.WidgetStyle
-import io.github.alessiogalbo.burraco.widget.WidgetViews
 import java.time.Instant
 
 class MainActivity : Activity() {
@@ -73,7 +73,7 @@ class MainActivity : Activity() {
     private fun renderStatus(now: Instant) {
         val list = findViewById<LinearLayout>(R.id.status_list)
         list.removeAllViews()
-        WidgetViews.ordered(ScheduleRepo.engine(this).statusAll(now)).forEach { s ->
+        EventOrder.ordered(ScheduleRepo.engine(this).statusAll(now)).forEach { s ->
             val rv = RemoteViews(packageName, R.layout.row_event).also { WidgetBind.bind(this, it, s, now, style) }
             list.addView(rv.apply(this, list))
         }
