@@ -5,7 +5,6 @@ Il lavoro concluso è in [CHANGELOG.md](CHANGELOG.md) (tecnico) e [NOVITA.md](NO
 ## Risposte e domande per te
 
 ## Ora
-- [ ] Release v1.0.2 (tag → GitHub Actions, verifica firma) — IN LAVORAZIONE: Claude (sessione principale) dal 2026-10-07
 
 ## Prossimi
 
