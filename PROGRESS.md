@@ -3,11 +3,12 @@
 Il lavoro concluso è in [CHANGELOG.md](CHANGELOG.md) (tecnico) e [NOVITA.md](NOVITA.md) (per gli utenti).
 
 ## Risposte e domande per te
+- **R6** (2026-10-08) Diagnostica «denied in 18 ms» → Chrome ha il sito bloccato: icona a sinistra dell'indirizzo → Autorizzazioni → Reimposta (o Impostazioni sito → Tutti i siti → sito → Cancella e reimposta); se non basta, Android → App → Chrome → Notifiche → canale del sito attivo.
 - **R5** (2026-10-08) Ipotesi «app del sito installata» esclusa dall'utente (nessuna versione web installata) → aggiunta la diagnostica per leggere i valori reali invece di indovinare.
 - **R4** (2026-10-08) «Attiva» non funziona in Chrome → la richiesta viene silenziata: controllare Chrome → Impostazioni sito → Notifiche → sito → Consenti, e Impostazioni Android → App → Chrome → Notifiche attive (il caso più probabile).
 
 ## Ora
-- [ ] Sito: «Attiva» in una scheda Chrome Android resta (permesso «default»; impostazioni sito e Chrome attive, nessuna app del sito installata). Aggiunta «Diagnostica notifiche» in Avvisi — attende: valori della diagnostica dal telefono dell'utente
+- [ ] Sito: «Attiva» su Chrome Android — diagnostica: richiesta «denied» in 18 ms (sito bloccato da Chrome). Indicati reset delle autorizzazioni del sito e canale notifiche del sito in Android; testo «bloccate» aggiornato — attende: test dell'utente del reset
 
 ## Prossimi
 

@@ -87,7 +87,7 @@
     "limit": "Funzionano solo finché questa pagina è aperta. Per avvisi anche a telefono bloccato usa il calendario qui sotto (iPhone e Android) o il widget Android.",
     "enable": "Attiva",
     "granted": "Notifiche attive nel browser.",
-    "denied": "Notifiche bloccate: riattivale dalle impostazioni del sito nel browser.",
+    "denied": "Notifiche bloccate per questo sito. In Chrome: icona a sinistra dell'indirizzo → Autorizzazioni → Reimposta, poi ricarica e tocca di nuovo; se resta bloccato: Impostazioni del telefono → App → Chrome → Notifiche → attiva questo sito.",
     "unsupported": "Questo browser non supporta le notifiche (su iPhone funzionano solo con il sito aggiunto alla schermata Home).",
     "noPrompt": "Il browser non ha mostrato la richiesta. Se hai installato il sito sulla schermata Home, il permesso è dell'app del sito: Impostazioni del telefono → App → BlS Tracker (quella del sito) → Notifiche → attive. Altrimenti in Chrome: ⋮ → Impostazioni → Impostazioni sito → Notifiche → questo sito → Consenti, e Impostazioni → App → Chrome → Notifiche attive.",
     "lead": "Anticipo",

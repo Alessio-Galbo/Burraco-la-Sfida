@@ -11,6 +11,7 @@ Versioni dell'app = tag `vX.Y.Z` (release su GitHub); il sito si aggiorna a ogni
   app del sito installata, a cui Chrome delega il permesso).
 - Avvisi: sezione richiudibile «Diagnostica notifiche» (permesso letto in due modi, risposta e durata della richiesta,
   HTTPS, service worker, modalità, browser, notifica di prova) per capire i casi in cui il permesso non arriva.
+- Messaggio «notifiche bloccate» con il reset delle autorizzazioni del sito e il canale notifiche del sito in Android.
 
 ## [1.0.2] – 2026-10-07
 ### App Android
