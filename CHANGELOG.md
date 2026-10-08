@@ -7,6 +7,7 @@ Versioni dell'app = tag `vX.Y.Z` (release su GitHub); il sito si aggiorna a ogni
 ### Sito
 - Versione dell'APK nella pagina Scarica: la cache dura al massimo 10 minuti invece dell'intera scheda
   (ricaricando la pagina si vedeva ancora la versione precedente).
+- Messaggio «richiesta non mostrata» con i percorsi esatti di Chrome per Android (impostazioni sito + notifiche di Chrome).
 
 ## [1.0.2] – 2026-10-07
 ### App Android
