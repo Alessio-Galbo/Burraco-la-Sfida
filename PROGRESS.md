@@ -3,12 +3,14 @@
 Il lavoro concluso è in [CHANGELOG.md](CHANGELOG.md) (tecnico) e [NOVITA.md](NOVITA.md) (per gli utenti).
 
 ## Risposte e domande per te
+- **R7** (2026-10-08) Reset già fatto, sito senza autorizzazioni ma richiesta «denied» in 18 ms → probabile blocco generale di Chrome/telefono. Test di confronto su https://www.bennish.net/web-notifications.html; controllare Chrome → Impostazioni → Notifiche («messaggi più discreti») e Impostazioni sito → Notifiche («I siti possono chiedere»).
+- **D1** (2026-10-08) Se il blocco è di Chrome sul telefono: parcheggiare «Attiva su Chrome Android» (restano i messaggi di aiuto; notifiche affidabili da app e calendario) — consiglio: A — opzioni: A) parcheggia B) continua a indagare
 - **R6** (2026-10-08) Diagnostica «denied in 18 ms» → Chrome ha il sito bloccato: icona a sinistra dell'indirizzo → Autorizzazioni → Reimposta (o Impostazioni sito → Tutti i siti → sito → Cancella e reimposta); se non basta, Android → App → Chrome → Notifiche → canale del sito attivo.
 - **R5** (2026-10-08) Ipotesi «app del sito installata» esclusa dall'utente (nessuna versione web installata) → aggiunta la diagnostica per leggere i valori reali invece di indovinare.
 - **R4** (2026-10-08) «Attiva» non funziona in Chrome → la richiesta viene silenziata: controllare Chrome → Impostazioni sito → Notifiche → sito → Consenti, e Impostazioni Android → App → Chrome → Notifiche attive (il caso più probabile).
 
 ## Ora
-- [ ] Sito: «Attiva» su Chrome Android — diagnostica: richiesta «denied» in 18 ms (sito bloccato da Chrome). Indicati reset delle autorizzazioni del sito e canale notifiche del sito in Android; testo «bloccate» aggiornato — attende: test dell'utente del reset
+- [ ] Sito: «Attiva» su Chrome Android — diagnostica: richiesta «denied» in 18 ms (sito bloccato da Chrome). Indicati reset delle autorizzazioni del sito e canale notifiche del sito in Android; testo «bloccate» aggiornato — attende: test di confronto su bennish.net (R7) e decisione D1
 
 ## Prossimi
 
