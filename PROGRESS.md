@@ -9,8 +9,5 @@ Il lavoro concluso è in [CHANGELOG.md](CHANGELOG.md) (tecnico) e [NOVITA.md](NO
 ## Prossimi
 
 ## In attesa
-- [ ] Conferma sul telefono della v1.0.1: ordine (in corso → fine più vicina) e orari aggiornati — attende: test dell'utente (countdown confermato il 2026-10-08)
-- [ ] Conferma sul sito: guida al calendario dedicato, messaggio quando il browser non mostra la richiesta notifiche — attende: test dell'utente
 
 ## Per il futuro
-- [ ] Notifiche push vere anche con PWA chiusa (serve un piccolo server Web Push, es. Cloudflare Worker gratuito) — parcheggiato il 2026-10-05: serve un server
