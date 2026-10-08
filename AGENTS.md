@@ -39,7 +39,7 @@ e **app Android leggerissima** con solo i widget per la Home. Repo: https://gith
 | `tools/` | [tools](docs/maps/tools.md) | Strumenti del progetto |
 | `web/` | [web](docs/maps/web.md) | 4 file in data/, locales/ |
 | `web/css/` | [web-css](docs/maps/web-css.md) | 12 file, es. base.css, events.css, guide.css |
-| `web/js/` | [web-js](docs/maps/web-js.md) | 30 file in core/, notify/, schedule/, ui/ |
+| `web/js/` | [web-js](docs/maps/web-js.md) | 31 file in core/, notify/, schedule/, ui/ |
 | `web/partials/` | [web-partials](docs/maps/web-partials.md) | 3 file, es. guide.html, info.html, templates.html |
 | `misc` | [misc](docs/maps/misc.md) | file nella root e cartelle piccole: docs/ |
 ## Avvio e test
@@ -47,7 +47,7 @@ e **app Android leggerissima** con solo i widget per la Home. Repo: https://gith
 ## Regole
 - globali: `~/.claude/CLAUDE.md` e `~/.gemini/GEMINI.md` (generate da AI-hub)
 ## Skill attive
-- per tag: android-appwidget-fluid, android-cli, android-release-signing, app-icon-generation, headless-chrome-cdp, modern-web-guidance, pwa-service-worker-checklist, recurring-weekly-schedule, web-share-social-preview
+- per tag: android-appwidget-fluid, android-cli, android-release-signing, app-icon-generation, headless-chrome-cdp, modern-web-guidance, portable-app-design, public-repo-hygiene, pwa-service-worker-checklist, recurring-weekly-schedule, web-share-social-preview
 ## Dati
 - [android/](android/): 139 file — 6 file .kts/.properties, nome = nomi vari (es. build.gradle.kts); app/src/main/res/drawable/: 32 file .xml, nome = nomi vari (es. accent_bar.xml); app/src/main/res/layout/: 26 file .xml, nome = nomi vari (es. activity_config.xml); app/src/main/java/io/github/alessiogalbo/burraco/widget/: 14 file .kt, nome = nomi vari (es. BurracoWidget.kt); … e altre 19 cartelle, ultimo 2026-10-07
 - [reference/](reference/): 313 file — review/shots/: 257 file .txt/.png, nome = nomi vari (es. all_140x140.png.txt); review/: 56 file .png, nome = nomi vari (es. app-footer-game.png), ultimo 2026-10-07
