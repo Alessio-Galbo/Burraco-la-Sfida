@@ -1,5 +1,5 @@
 // Service worker: app shell in cache (offline), rete-prima per orari e calendari, apertura della pagina dagli avvisi.
-const CACHE = "burraco-shell-v26";
+const CACHE = "burraco-shell-v27";
 const SHELL = [
   "./", "index.html", "partials/templates.html", "partials/guide.html", "partials/info.html", "locales/it.json", "data/schedule.json",
   "css/base.css", "css/shell.css", "css/events.css", "css/span.css", "css/torte.css", "css/week.css", "css/guide.css", "css/icons.css", "css/viewer.css", "css/share.css",
@@ -7,7 +7,7 @@ const SHELL = [
   "js/main.js", "js/config.js", "js/sw-register.js", "js/core/dom.js", "js/core/format.js", "js/core/i18n.js",
   "js/core/prefs.js", "js/schedule/index.js", "js/schedule/engine.js", "js/schedule/rome.js", "js/schedule/week.js",
   "js/ui/index.js", "js/ui/rows.js", "js/ui/phaselist.js", "js/ui/phasebar.js", "js/ui/tabs.js", "js/ui/week.js",
-  "js/ui/view.js", "js/ui/alerts.js", "js/ui/calendars.js", "js/ui/shots.js", "js/ui/viewer.js", "js/ui/share.js", "js/ui/release.js", "js/notify/notifier.js",
+  "js/ui/view.js", "js/ui/alerts.js", "js/ui/diag.js", "js/ui/calendars.js", "js/ui/shots.js", "js/ui/viewer.js", "js/ui/share.js", "js/ui/release.js", "js/notify/notifier.js",
   "icons/icon.svg", "icons/icon-192.png", "icons/icon-32.png",
   "img/icons/android.svg", "img/icons/googleplay.svg", "img/icons/appstore.svg", "img/icons/globe.svg",
   "img/icons/chevron-left.svg", "img/icons/chevron-right.svg", "img/icons/x.svg", "img/icons/kofi.svg", "img/qr-site.svg",

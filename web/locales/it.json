@@ -103,6 +103,23 @@
     "phaseBody": "Fase: {phase} – alle {time}",
     "ask": "Serve il permesso del browser"
   },
+  "diag": {
+    "title": "Diagnostica notifiche",
+    "permission": "Permesso (Notification)",
+    "query": "Permesso (Permissions API)",
+    "ask": "Richiedi di nuovo",
+    "asked": "Risposta alla richiesta",
+    "test": "Prova una notifica",
+    "testResult": "Prova notifica",
+    "secure": "Pagina sicura (HTTPS)",
+    "sw": "Service worker attivo",
+    "mode": "Modalità",
+    "browser": "Browser",
+    "yes": "sì",
+    "no": "no",
+    "ok": "inviata",
+    "ms": "{result} in {ms} ms"
+  },
   "calendars": {
     "title": "Calendario del telefono",
     "intro": "Aggiungi gli eventi al calendario: ti avvisa all'inizio e 15 minuti prima, anche ad app chiusa.",

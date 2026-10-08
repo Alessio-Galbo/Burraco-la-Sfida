@@ -66,3 +66,4 @@
   .links .btn { flex: 1; justify-content: center; }
 }
 .cal-tip { margin: 0 0 8px; padding: 8px 10px; border-radius: var(--r-row); background: var(--surface); border-left: 3px solid var(--gold); }
+.diag { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; margin: 6px 0 8px; font-size: 12px; } .diag div { display: contents; } .diag dt { color: var(--muted); } .diag dd { margin: 0; word-break: break-word; }

@@ -10,3 +10,4 @@ export { initShots } from "./shots.js";
 export { initAppearance } from "./appearance.js";
 export { initShare } from "./share.js";
 export { initRelease } from "./release.js";
+export { initDiag } from "./diag.js";

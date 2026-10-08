@@ -40,6 +40,7 @@ async function boot() {
   ui.initTabs();
   ui.initView(tick);
   ui.initAlerts(schedule);
+  ui.initDiag();
   ui.initCalendars(schedule);
   ui.initAppearance();
   ui.initShots();
