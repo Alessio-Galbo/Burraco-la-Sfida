@@ -12,6 +12,8 @@ Versioni dell'app = tag `vX.Y.Z` (release su GitHub); il sito si aggiorna a ogni
 - Avvisi: sezione richiudibile «Diagnostica notifiche» (permesso letto in due modi, risposta e durata della richiesta,
   HTTPS, service worker, modalità, browser, notifica di prova) per capire i casi in cui il permesso non arriva.
 - Messaggio «notifiche bloccate» con il reset delle autorizzazioni del sito e il canale notifiche del sito in Android.
+- Causa del permesso negato su Chrome Android trovata con la diagnostica (2026-10-08): installazione PWA fantasma a cui
+  Chrome delegava il permesso; risolto cancellando i dati del sito, reinstallando e rimuovendo la PWA.
 
 ## [1.0.2] – 2026-10-07
 ### App Android
