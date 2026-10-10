@@ -39,7 +39,7 @@ e **app Android leggerissima** con solo i widget per la Home. Repo: https://gith
 | `tools/` | [tools](docs/maps/tools.md) | Strumenti del progetto |
 | `web/` | [web](docs/maps/web.md) | 4 file in data/, locales/ |
 | `web/css/` | [web-css](docs/maps/web-css.md) | 12 file, es. base.css, events.css, guide.css |
-| `web/js/` | [web-js](docs/maps/web-js.md) | 31 file in core/, notify/, schedule/, ui/ |
+| `web/js/` | [web-js](docs/maps/web-js.md) | 37 file in core/, notify/, schedule/, shared/, ui/ |
 | `web/partials/` | [web-partials](docs/maps/web-partials.md) | 3 file, es. guide.html, info.html, templates.html |
 | `misc` | [misc](docs/maps/misc.md) | file nella root e cartelle piccole: docs/ |
 ## Avvio e test
