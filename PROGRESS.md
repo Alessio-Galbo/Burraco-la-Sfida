@@ -6,8 +6,14 @@ Il lavoro concluso è in [CHANGELOG.md](CHANGELOG.md) (tecnico) e [NOVITA.md](NO
 
 ## Ora
 
+## Approvati
+
 ## Prossimi
 
 ## In attesa
 
+## Test richiesti
+
 ## Per il futuro
+
+## Idee di sviluppo futuro
