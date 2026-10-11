@@ -2,7 +2,7 @@
 
 Il lavoro concluso è in [CHANGELOG.md](CHANGELOG.md) (tecnico) e [NOVITA.md](NOVITA.md) (per gli utenti).
 
-## Risposte e domande per te
+## Domande per te
 
 ## Ora
 
@@ -10,9 +10,7 @@ Il lavoro concluso è in [CHANGELOG.md](CHANGELOG.md) (tecnico) e [NOVITA.md](NO
 
 ## Prossimi
 
-## In attesa
-
-## Test richiesti
+## Prove da fare
 
 ## Per il futuro
 
