@@ -13,7 +13,7 @@ android {
         applicationId = "io.github.alessiogalbo.burraco"
         minSdk = 26
         targetSdk = 36
-        // Versione dal tag di rilascio (workflow), altrimenti 1 / 1.0.0 per le build locali.
+        // Versione da BURRACO_VERSION_CODE / BURRACO_VERSION_NAME, altrimenti 1 / 1.0.0.
         versionCode = System.getenv("BURRACO_VERSION_CODE")?.toIntOrNull() ?: 1
         versionName = System.getenv("BURRACO_VERSION_NAME")?.takeIf { it.isNotBlank() } ?: "1.0.0"
     }

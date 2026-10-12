@@ -61,7 +61,7 @@ Gli aggiornamenti sono firmati sempre con la stessa chiave: si installano sopra 
 | `tests/` | Test del motore orari e dei calendari; `schedule-cases.json` è condiviso con i test Android |
 | `tools/` | Generatore dei calendari `.ics` |
 | `android/` | App Kotlin senza librerie esterne (widget, notifiche) |
-| `.github/workflows/` | Pubblicazione del sito (GitHub Pages) e dell'APK (GitHub Releases, sui tag `v*`) |
+| `.github/workflows/` | Pubblicazione del sito (GitHub Pages); l'APK si compila in locale (vedi sotto) |
 
 ```bash
 node --test "tests/*.test.mjs"        # test del sito e dei calendari
