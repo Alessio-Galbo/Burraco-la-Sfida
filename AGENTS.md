@@ -12,7 +12,7 @@ e **app Android leggerissima** con solo i widget per la Home. Repo: https://gith
 | `web/calendar/*.ics` | Calendari generati da `tools/build-ics.mjs` (non modificarli a mano) |
 | `web/img/widgets/` | Screenshot dei widget mostrati nella pagina download |
 | `android/` | Progetto Gradle (Kotlin, nessuna libreria AndroidX): widget + notifiche locali |
-| `.github/workflows/` | Pubblicazione su GitHub Pages (l'APK si compila solo in locale, mai con GitHub Actions) |
+| `.github/workflows/` | Pubblicazione su GitHub Pages e APK nelle GitHub Releases |
 | `PROGRESS.md` | A che punto siamo |
 
 ## Regole
