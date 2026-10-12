@@ -1,9 +1,10 @@
 # Pubblica la PWA (cartella web/) su GitHub Pages: test, generazione dei calendari .ics, deploy.
+# Solo a ogni push sul ramo deploy (tasto «Pubblica il sito» di AI-hub), mai a ogni push su main.
 name: Pages
 
 on:
   push:
-    branches: [main]
+    branches: [deploy]
   workflow_dispatch:
 
 permissions:
@@ -34,5 +35,6 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web
+          retention-days: 1
       - id: deployment
         uses: actions/deploy-pages@v4
